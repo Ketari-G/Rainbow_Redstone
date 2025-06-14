@@ -1,0 +1,10 @@
+{
+    id: "RainbowRedstone",
+    version: 13,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        // Your config options will go here
+        Test1: false
+        
+    }
+}
