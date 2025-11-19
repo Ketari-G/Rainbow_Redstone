@@ -2,6 +2,13 @@
 
 This is a fully vanilla compatible resource pack for **any** version 1.13 and above, that makes the redstone dust rainbow (meaning you don't need *any* mods to use this!).
 
-**License:** [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
+**License:** [To be determined - for now ARR]
 
-# GITHUB REPO *not quite* outdated - am gonna learn and use this soon TM cuz I want proper version control
+To be done:
+- indorporate v0.5.0 rpo files and stuff into main
+- rpo support entirely + re-integration
+- rpo color customization
+- split between sodium/vanilla game versions to make sure core shaders work
+- terrain.fsh to be done for later game versions cuz no rendertype_cutout
+- proper liscence - probably custom
+- 

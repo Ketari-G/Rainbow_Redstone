@@ -1,6 +1,0 @@
-{
-    "parent": "block/redstone_dust/side_alt/side_alt_4",
-    "textures": {
-        "line": "block/redstone_dust/line1/line1_4"
-    }
-}
