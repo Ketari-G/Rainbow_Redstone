@@ -23,3 +23,13 @@ To be done:
 - terrain.fsh to be done for later game versions cuz no rendertype_cutout
 - license file for resource pack itself (?)
 - 
+
+
+
+Random stuff to keep track of version wise:
+- 1.13 - 1.15:  Weird ass redstone_wire.json blockstate requirements, 1.16+ works fine with same file
+- <1.17 no core shaders - needs custom base version for vanilla
+- 1.17 - 1.21.1: rendertype_cutout.fsh core shaders used - needs testing in 1.17
+- 1.21.2 - 1.21.10: terrain.fsh used instead, same file basically
+- 1.21.11: terrain.fsh has been changed, needs adapting
+
