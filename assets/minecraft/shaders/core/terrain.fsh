@@ -1,15 +1,12 @@
 #version 150
 
-#moj_import <fog.glsl>
+#moj_import <minecraft:fog.glsl>
+#moj_import <minecraft:dynamictransforms.glsl>
 
 uniform sampler2D Sampler0;
 
-uniform vec4 ColorModulator;
-uniform float FogStart;
-uniform float FogEnd;
-uniform vec4 FogColor;
-
-in float vertexDistance;
+in float sphericalVertexDistance;
+in float cylindricalVertexDistance;
 in vec4 vertexColor;
 in vec2 texCoord0;
 
@@ -69,10 +66,13 @@ void main() {
         custom = vec4(0.4039, 0.2235, 0.0902, 1.0); //ss 15
     }
     
-    vec4 color = texColor * vertexColor * custom;
-    if (color.a < 0.1) { 
+    vec4 color = texture(Sampler0, texCoord0) * vertexColor * custom;
+    
+#ifdef ALPHA_CUTOUT
+    if (color.a < ALPHA_CUTOUT) {
         discard;
     }
     
-    fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
+#endif
+    fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 }

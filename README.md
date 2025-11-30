@@ -4,7 +4,7 @@ Shader branch: base assets + core shaders. Specifics:
 - No numbers
 - **Breaks** with sodium
 - No polytone compat
-- 1.21.2 - 1.21.5
+- 1.21.6 - 1.21.10
 
 
 **License:** Same as main branch
