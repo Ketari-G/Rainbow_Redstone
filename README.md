@@ -1,11 +1,10 @@
-Base branch: base assets version of the pack, made to work for base vanilla. Specifics:
-- No core shader usage
-- Textures are colored
+Shader branch: base assets + core shaders. Specifics:
+- Textures are black/white - core shaders for color
 - No rpo support
 - No numbers
-- Sodium compat
+- **Breaks** with sodium
 - No polytone compat
-- 1.13+
+- 1.17 - 1.21.1
 
 
 **License:** Same as main branch
