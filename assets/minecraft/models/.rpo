@@ -1,0 +1,4 @@
+{
+    condition: "false",
+    fallback: "assets/minecraft/rpo_models/"
+}

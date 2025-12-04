@@ -1,0 +1,7 @@
+{
+    condition: "dust_type.vanilla",
+    fallback: [
+      "assets/minecraft/textures/block/redstone_dust/dot/4_wide/dot_9.png",
+      "assets/minecraft/textures/block/redstone_dust/dot/6_wide/dot_9.png"
+    ]
+}

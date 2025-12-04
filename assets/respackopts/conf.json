@@ -1,0 +1,27 @@
+{
+    id: "RainbowRedstone",
+    version: 6,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        // Your config options will go here
+         dustItem: {
+            type: "enum",
+            default: "rr",
+            values: ["rr", "vanilla"]
+        },
+        dust_type: {
+            type: "enum",
+            default: "vanilla",
+            values: ["vanilla", "wide4", "wide6"]
+        },
+        dust_numbers: {
+            type: "enum",
+            default: "nonum",
+            values: ["nonum", "num1", "num2", "num3"]
+        },
+        dustHeight: {
+            type: "number",
+            default: 0.25
+        }
+    }
+}

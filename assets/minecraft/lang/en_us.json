@@ -1,0 +1,22 @@
+{
+    "rpo.RainbowRedstone": "Rainbow Redstone",
+    "rpo.RainbowRedstone.title": "Rainbow Redstone",
+    "rpo.tooltip.RainbowRedstone": "If changes don't get applied or textures are glitched, click [F3 + T] in-game until they are fixed.",
+    "rpo.RainbowRedstone.tooltip": "If changes don't get applied or textures are glitched, click [F3 + T] in-game until they are fixed.",
+    "rpo.RainbowRedstone.dustItem": "Redstone dust item type",
+    "rpo.RainbowRedstone.dustItem.rr": "Rainbow",
+    "rpo.RainbowRedstone.dustItem.vanilla": "Vanilla",
+    "rpo.RainbowRedstone.dust_type": "Redstone dust type:§7 choose shape",
+    "rpo.RainbowRedstone.dust_type.vanilla": "Vanilla",
+    "rpo.RainbowRedstone.dust_type.wide4": "4 Wide",
+    "rpo.RainbowRedstone.dust_type.wide6": "6 Wide",
+    "rpo.RainbowRedstone.dust_numbers": "Redstone dust numbers:§7 choose type to display on top of dust",
+    "rpo.RainbowRedstone.dust_numbers.nonum": "No numbers",
+    "rpo.RainbowRedstone.dust_numbers.num1": "Rounded",
+    "rpo.RainbowRedstone.dust_numbers.num2": "Rectangular",
+    "rpo.RainbowRedstone.dust_numbers.num3": "Double",
+    "rpo.RainbowRedstone.dustHeight": "Redstone dust height:§7 distance of it from surface it's on",
+    "rpo.tooltip.RainbowRedstone.dustHeight": "Min: [-16], Max: [31.95]. Recommended range: 0.01 - 0.25",
+    "rpo.RainbowRedstone.dustHeight.tooltip": "Min: [-16], Max: [31.95]. Recommended range: 0.01 - 0.25"
+    
+}

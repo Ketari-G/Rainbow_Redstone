@@ -1,0 +1,27 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"line": "block/redstone_dust/line0/vanilla/line0_6",
+		"overlay": "block/redstone_dust_overlay"
+	},
+	"elements": [
+		{
+			"from": [0, 0, ${offset}],
+			"to": [16, 16, ${offset}],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#line", "tintindex": -1},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#line", "tintindex": -1}
+			}
+		},
+		{
+			"from": [0, 0, ${offset}],
+			"to": [16, 16, ${offset}],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#overlay"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#overlay"}
+			}
+		}
+	]
+}
