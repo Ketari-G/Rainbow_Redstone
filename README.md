@@ -16,12 +16,10 @@ This is a fully vanilla compatible resource pack for **any** version 1.13 and ab
 ]
 
 To be done:
-- indorporate v0.5.0 rpo files and stuff into main
-- rpo support entirely + re-integration
+- v0.6.0
 - rpo color customization
 - split between sodium/vanilla game versions to make sure core shaders work
-- terrain.fsh to be done for later game versions cuz no rendertype_cutout
-- license file for resource pack itself (?)
+- license file for resource pack itself
 - tooltips need fixing*
 
 
