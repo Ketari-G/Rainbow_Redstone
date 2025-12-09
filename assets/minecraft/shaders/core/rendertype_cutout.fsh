@@ -2,6 +2,8 @@
 
 #moj_import <fog.glsl>
 
+#include respackopts:config_supplier
+
 uniform sampler2D Sampler0;
 
 uniform vec4 ColorModulator;
