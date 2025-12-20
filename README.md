@@ -31,4 +31,6 @@ Random stuff to keep track of version wise:
 - 1.21.2+: terrain.fsh used instead
 - 1.21.6+: a lot of changes to terrain.fsh 
 - 1.21.11: terrain.fsh has been BORKED WTF, needs adapting :despair: - idk how lol (I tried)
+- 
+- respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13)
 
