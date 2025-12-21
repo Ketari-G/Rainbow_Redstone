@@ -1,73 +1,89 @@
 {
-    id: "RainbowRedstone",
+    id: "rainbowRedstone",
     version: 6,
     capabilities: ["FileFilter", "DirFilter"],
     conf: {
         // Your config options will go here
         color: {
             ss0: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss1: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss2: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss3: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss4: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss5: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss6: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss7: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss8: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss9: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss10: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss11: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss12: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss13: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss14: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             },
             ss15: {
-                type: "string",
-                default: "0.0, 0.0, 0.0"
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
             }
         }
         
