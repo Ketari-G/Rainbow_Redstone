@@ -2,7 +2,7 @@
 
 #moj_import <fog.glsl>
 
-#include respackopts:config_supplier
+#moj_import "rr_config.glsl"
 
 uniform sampler2D Sampler0;
 
@@ -24,6 +24,7 @@ void main() {
     
     if (alpha >= 0.595 && alpha <= 0.605) {
         custom = vec4(0.0, 0.0, 0.0, 1.0); //ss 0
+        custom = vec4(rainbowRedstone_color_ss0_r/255, 0.0, 0.0 ,1.0);
     }
     if (alpha >= 0.605 && alpha <= 0.615) {
         custom = vec4(0.2784, 0.3098, 0.3216, 1.0); //ss 1
@@ -70,7 +71,7 @@ void main() {
     if (alpha >= 0.745 && alpha <= 0.755) {
         custom = vec4(0.4039, 0.2235, 0.0902, 1.0); //ss 15
     }
-    
+
     vec4 color = texColor * vertexColor * custom;
     if (color.a < 0.1) { 
         discard;
