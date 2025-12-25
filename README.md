@@ -33,4 +33,5 @@ Random stuff to keep track of version wise:
 - 1.21.11: terrain.fsh has been BORKED WTF, needs adapting :despair: - idk how lol (I tried)
 - 
 - respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13)
+- respackopts <1.20 doesn't have categories inside category support I think? so color customization with rpo will be 1.20.1+ (corresponds to rpo v9)
 
