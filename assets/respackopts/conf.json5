@@ -1,0 +1,91 @@
+{
+    id: "rainbowRedstone",
+    version: 6,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        // Your config options will go here
+        color: {
+            ss0: {
+                r: {type: "integer", default: 0},
+                g: {type: "integer", default: 0},
+                b: {type: "integer", default: 0}
+            },
+            ss1: {
+                r: {type: "integer", default: 71},
+                g: {type: "integer", default: 79},
+                b: {type: "integer", default: 82}
+            },
+            ss2: {
+                r: {type: "integer", default: 156},
+                g: {type: "integer", default: 157},
+                b: {type: "integer", default: 151}
+            },
+            ss3: {
+                r: {type: "integer", default: 243},
+                g: {type: "integer", default: 140},
+                b: {type: "integer", default: 170}
+            },
+            ss4: {
+                r: {type: "integer", default: 198},
+                g: {type: "integer", default: 79},
+                b: {type: "integer", default: 189}
+            },
+            ss5: {
+                r: {type: "integer", default: 137},
+                g: {type: "integer", default: 50},
+                b: {type: "integer", default: 183}
+            },
+            ss6: {
+                r: {type: "integer", default: 60},
+                g: {type: "integer", default: 68},
+                b: {type: "integer", default: 169}
+            },
+            ss7: {
+                r: {type: "integer", default: 58},
+                g: {type: "integer", default: 179},
+                b: {type: "integer", default: 218}
+            },
+            ss8: {
+                r: {type: "integer", default: 22},
+                g: {type: "integer", default: 156},
+                b: {type: "integer", default: 157}
+            },
+            ss9: {
+                r: {type: "integer", default: 93},
+                g: {type: "integer", default: 124},
+                b: {type: "integer", default: 21}
+            },
+            ss10: {
+                r: {type: "integer", default: 128},
+                g: {type: "integer", default: 199},
+                b: {type: "integer", default: 31}
+            },
+            ss11: {
+                r: {type: "integer", default: 194},
+                g: {type: "integer", default: 213},
+                b: {type: "integer", default: 50}
+            },
+            ss12: {
+                r: {type: "integer", default: 255},
+                g: {type: "integer", default: 216},
+                b: {type: "integer", default: 61}
+            },
+            ss13: {
+                r: {type: "integer", default: 249},
+                g: {type: "integer", default: 128},
+                b: {type: "integer", default: 29}
+            },
+            ss14: {
+                r: {type: "integer", default: 176},
+                g: {type: "integer", default: 46},
+                b: {type: "integer", default: 38}
+            },
+            ss15: {
+                r: {type: "integer", default: 103},
+                g: {type: "integer", default: 57},
+                b: {type: "integer", default: 23}
+            }
+        }
+        
+    }
+}
