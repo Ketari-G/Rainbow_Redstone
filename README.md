@@ -1,6 +1,6 @@
 Shader branch: base assets + core shaders. Specifics:
 - Textures are black/white - core shaders for color
-- No rpo support
+- RPO support for core shaders only
 - No numbers
 - **Breaks** with sodium
 - No polytone compat
