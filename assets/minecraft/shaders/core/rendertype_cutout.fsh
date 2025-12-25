@@ -2,8 +2,6 @@
 
 #moj_import <fog.glsl>
 
-#moj_import "rr_config.glsl"
-
 uniform sampler2D Sampler0;
 
 uniform vec4 ColorModulator;
@@ -16,6 +14,12 @@ in vec4 vertexColor;
 in vec2 texCoord0;
 
 out vec4 fragColor;
+
+//include respackopts:config_supplier
+
+#ifndef respackopts_loaded
+    #define rainbowRedstone_color_ss0_r 0
+#endif
 
 void main() {
     vec4 texColor = texture(Sampler0, texCoord0);
