@@ -16,11 +16,10 @@ This is a fully vanilla compatible resource pack for **any** version 1.13 and ab
 ]
 
 To be done:
-- v0.6.0
-- rpo color customization
+- v1.0.0
 - split between sodium/vanilla game versions to make sure core shaders work
 - license file for resource pack itself
-- tooltips need fixing*
+- rpo tooltips are f\*ed, basically need all version testing
 
 
 
@@ -34,4 +33,10 @@ Random stuff to keep track of version wise:
 - 
 - respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13)
 - respackopts <1.20 doesn't have categories inside category support I think? so color customization with rpo will be 1.20.1+ (corresponds to rpo v9)
+-
+- overlays were added in 1.20.2, how do I split core shaders in 1.13 vs 1.17+? I dont fuuuuuuuuuuu
 
+OKAY NEW PLAN
+make pack 1.17+, pure color customization/core shaders, pray rpo can block out/replace it if sodium is present
+that SHOULD work, only problem is that 1.13-1.16 support is just gone lol. would consider making 2nd pack for those versions but v0.5.0 does that alrdy
+rip tho I really wanted everything to be in a single pack. I guess I could include it on modrinth as a special depency or someshit

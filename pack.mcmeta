@@ -1,7 +1,9 @@
 ﻿{
   "pack": {
     "pack_format": 4,
+    "min_format": 4,
+    "max_format": 1000,
     "supported_formats":[4,1000],
-    "description": ["\u00a7cMake\u00a76 your\u00a7e redstone\u00a7a rainbow\u00a73 in\u00a79 pure\u00a75 vanilla!"]
+    "description": ["\u00a7cMake\u00a76 your\u00a7e redstone\u00a7a rainbow\u00a73 in\u00a79 pure\u00a75 vanilla!§7 • by Ketari"]
   }
 }
