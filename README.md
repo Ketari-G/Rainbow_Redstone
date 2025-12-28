@@ -17,7 +17,7 @@ This is a fully vanilla compatible resource pack for **any** version 1.13 and ab
 
 To be done:
 - v1.0.0
-- split between sodium/vanilla game versions to make sure core shaders work
+- split between sodium/vanilla game versions with rpo to make sure core shaders work
 - license file for resource pack itself
 - rpo tooltips are f\*ed, basically need all version testing
 
@@ -25,18 +25,15 @@ To be done:
 
 Random stuff to keep track of version wise:
 - 1.13 - 1.15:  Weird ass redstone_wire.json blockstate requirements, 1.16+ works fine with same file
-- <1.17 no core shaders - needs custom base version for vanilla
-- 1.17 - 1.21.1: rendertype_cutout.fsh core shaders used - needs testing in 1.17
+- <1.17: no core shaders - uses standard colored textures
+- 1.17 - 1.20.1: rendertype_cutout.fsh core shaders used with colored textures otherwise no 1.13 - 1.16 compat, due to overlays being strictly 1.20.2+. only downside is 0 color changing being a bit fucked up
+- 1.20+: rpo color customization officially available (rpo pack v9)
+- 1.20.2 - 1.21.1: rendertype_cutout.fsh used but replaced with "normal one" with no colored textures support - all textures have to be black & white
 - 1.21.2+: terrain.fsh used instead
 - 1.21.6+: a lot of changes to terrain.fsh 
 - 1.21.11: terrain.fsh has been BORKED WTF, needs adapting :despair: - idk how lol (I tried)
 - 
-- respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13)
-- respackopts <1.20 doesn't have categories inside category support I think? so color customization with rpo will be 1.20.1+ (corresponds to rpo v9)
+- respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13). not using strings tho so idk, for future I guess?
 -
-- overlays were added in 1.20.2, how do I split core shaders in 1.13 vs 1.17+? I dont fuuuuuuuuuuu
 
-OKAY NEW PLAN
-make pack 1.17+, pure color customization/core shaders, pray rpo can block out/replace it if sodium is present
-that SHOULD work, only problem is that 1.13-1.16 support is just gone lol. would consider making 2nd pack for those versions but v0.5.0 does that alrdy
-rip tho I really wanted everything to be in a single pack. I guess I could include it on modrinth as a special depency or someshit
+
