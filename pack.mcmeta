@@ -3,7 +3,41 @@
     "pack_format": 4,
     "min_format": 4,
     "max_format": 1000,
-    "supported_formats":[4,1000],
+    "supported_formats":[4, 1000],
     "description": ["\u00a7cMake\u00a76 your\u00a7e redstone\u00a7a rainbow\u00a73 in\u00a79 pure\u00a75 vanilla!§7 • by Ketari"]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "gray_textures",
+        "min_format": 18,
+        "max_format": 1000,
+        "formats": [18, 1000]
+      },
+      {
+        "directory": "1_20_2",
+        "min_format": 18,
+        "max_format": 34,
+        "formats": [18, 34]
+      },
+      {
+        "directory": "1_21_2",
+        "min_format": 42,
+        "max_format": 55,
+        "formats": [42, 55]
+      },
+      {
+        "directory": "1_21_6",
+        "min_format": 63,
+        "max_format": 69.0,
+        "formats": [63, 69.0]
+      },
+      {
+        "directory": "1_21_11",
+        "min_format": 75,
+        "max_format": 1000,
+        "formats": [75, 1000]
+      }
+    ]
   }
 }
