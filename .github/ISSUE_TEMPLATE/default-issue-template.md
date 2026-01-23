@@ -7,14 +7,8 @@ assignees: Ketari-G
 
 ---
 
-* Modloader:
-     - [ ] Vanilla
-     - [ ] Fabric/Quilt
-     - [ ] Forge/Neoforge
+* Modloader (Vanilla, Fabric, Forge):
 * Minecraft version (1.x.x):
-* Mods present?:
-     - [ ] Any variant of sodium
-     - [ ] Respackopts
-     - [ ] Generally modded
+* Mods present? (Mention any variant of sodium, respackopts and if it's generally modded):
 
 ### Describe issue:
