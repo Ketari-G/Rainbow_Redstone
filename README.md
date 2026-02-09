@@ -4,20 +4,21 @@ This is a fully vanilla compatible resource pack for **any** version 1.13 and ab
 This repo is mainly used for me to keep track of things and branches and file history and wtv else idk lol
 
 
-To be done:
+### To be done:
 - v1.0.0
 - split between sodium/vanilla game versions with rpo to make sure core shaders work
 - license file for resource pack itself
 - rpo tooltips are f\*ed, basically need all version testing
 - presets
 
-Random stuff to keep track of color wise??:
+### Random stuff to keep track of color wise??:
 - transparent stuff in-game gets affected by alpha customization, need to find something more specific / not interfering with anything
 - stained glass 2/3 dots alpha = 0.61
 - stained glass outline alpha = 0.64
-- redstone dust alpha values should be 0.7 to 0.85
+- stained glass is only a problem in 1.21.2 + (could be earlier, too lazy to test, def not <=1.20.2), which means no color texture change needed
+- redstone dust alpha values for gray textrues should be 0.7 to 0.85
 
-Random stuff to keep track of version wise:
+### Random stuff to keep track of version wise:
 - 1.13 - 1.15:  Weird ass redstone_wire.json blockstate requirements, 1.16+ works fine with same file
 - <1.17: no core shaders - uses standard colored textures
 - 1.17 - 1.20.1: rendertype_cutout.fsh core shaders used with colored textures otherwise no 1.13 - 1.16 compat, due to overlays being strictly 1.20.2+. only downside is SS 0 color changing being a bit fucked up

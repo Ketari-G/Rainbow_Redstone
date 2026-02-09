@@ -90,10 +90,78 @@ vec4 sampleRGSS(sampler2D source, vec2 uv, vec2 pixelSize) {
 
 #moj_import "default_colors.glsl" //imports default color settings variables
 
+//1.21.11
+
 void main() {
+    vec2 texel = floor(texCoord0 * TextureSize) + 0.5;
+    vec2 snapped = texel / TextureSize;
+    vec4 texColor = textureLod(Sampler0, snapped, 0.0);
+
+    float alpha = float(texColor.a);
+    vec4 custom = texColor;
+
+    float alpha_start = 0.7; //sets texture transparency start value
+    //make sure this is actually accurate to the true texture alpha value
+
+    int power = int(round((alpha - alpha_start) * 100.0)); //gets int of every signal strengh
+
+    if (power == 0) {
+        custom = vec4(rainbowRedstone_color_ss0_r/255.0, rainbowRedstone_color_ss0_g/255.0, rainbowRedstone_color_ss0_b/255.0, 1.0);
+    }
+    else if (power == 1) {
+        custom = vec4(rainbowRedstone_color_ss1_r/255.0, rainbowRedstone_color_ss1_g/255.0, rainbowRedstone_color_ss1_b/255.0, 1.0);
+    }
+    else if (power == 2) {
+        custom = vec4(rainbowRedstone_color_ss2_r/255.0, rainbowRedstone_color_ss2_g/255.0, rainbowRedstone_color_ss2_b/255.0, 1.0);
+    }
+    else if (power == 3) {
+        custom = vec4(rainbowRedstone_color_ss3_r/255.0, rainbowRedstone_color_ss3_g/255.0, rainbowRedstone_color_ss3_b/255.0, 1.0);
+    }
+    else if (power == 4) {
+        custom = vec4(rainbowRedstone_color_ss4_r/255.0, rainbowRedstone_color_ss4_g/255.0, rainbowRedstone_color_ss4_b/255.0, 1.0);
+    }
+    else if (power == 5) {
+        custom = vec4(rainbowRedstone_color_ss5_r/255.0, rainbowRedstone_color_ss5_g/255.0, rainbowRedstone_color_ss5_b/255.0, 1.0);
+    }
+    else if (power == 6) {
+        custom = vec4(rainbowRedstone_color_ss6_r/255.0, rainbowRedstone_color_ss6_g/255.0, rainbowRedstone_color_ss6_b/255.0, 1.0);
+    }
+    else if (power == 7) {
+        custom = vec4(rainbowRedstone_color_ss7_r/255.0, rainbowRedstone_color_ss7_g/255.0, rainbowRedstone_color_ss7_b/255.0, 1.0);
+    }
+    else if (power == 8) {
+        custom = vec4(rainbowRedstone_color_ss8_r/255.0, rainbowRedstone_color_ss8_g/255.0, rainbowRedstone_color_ss8_b/255.0, 1.0);
+    }
+    else if (power == 9) {
+        custom = vec4(rainbowRedstone_color_ss9_r/255.0, rainbowRedstone_color_ss9_g/255.0, rainbowRedstone_color_ss9_b/255.0, 1.0);
+    }
+    else if (power == 10) {
+        custom = vec4(rainbowRedstone_color_ss10_r/255.0, rainbowRedstone_color_ss10_g/255.0, rainbowRedstone_color_ss10_b/255.0, 1.0);
+    }
+    else if (power == 11) {
+        custom = vec4(rainbowRedstone_color_ss11_r/255.0, rainbowRedstone_color_ss11_g/255.0, rainbowRedstone_color_ss11_b/255.0, 1.0);
+    }
+    else if (power == 12) {
+        custom = vec4(rainbowRedstone_color_ss12_r/255.0, rainbowRedstone_color_ss12_g/255.0, rainbowRedstone_color_ss12_b/255.0, 1.0);
+    }
+    else if (power == 13) {
+        custom = vec4(rainbowRedstone_color_ss13_r/255.0, rainbowRedstone_color_ss13_g/255.0, rainbowRedstone_color_ss13_b/255.0, 1.0);
+    }
+    else if (power == 14) {
+        custom = vec4(rainbowRedstone_color_ss14_r/255.0, rainbowRedstone_color_ss14_g/255.0, rainbowRedstone_color_ss14_b/255.0, 1.0);
+    }
+    else if (power == 15) {
+        custom = vec4(rainbowRedstone_color_ss15_r/255.0, rainbowRedstone_color_ss15_g/255.0, rainbowRedstone_color_ss15_b/255.0, 1.0);
+    }
+    
     vec4 color = (UseRgss == 1 ? sampleRGSS(Sampler0, texCoord0, 1.0f / TextureSize) : sampleNearest(Sampler0, texCoord0, 1.0f / TextureSize)) * vertexColor;
     color = mix(FogColor * vec4(1, 1, 1, color.a), color, ChunkVisibility);
-
+    
+    if (alpha >= (alpha_start - 0.005) && alpha <= (alpha_start + 0.155)) {
+        color = color * custom;
+        color.a = 1.0;
+    }
+    
 #ifdef ALPHA_CUTOUT
     if (color.a < ALPHA_CUTOUT) {
         discard;
