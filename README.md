@@ -11,7 +11,11 @@ To be done:
 - rpo tooltips are f\*ed, basically need all version testing
 - presets
 
-
+Random stuff to keep track of color wise??:
+- transparent stuff in-game gets affected by alpha customization, need to find something more specific / not interfering with anything
+- stained glass 2/3 dots alpha = 0.61
+- stained glass outline alpha = 0.64
+- redstone dust alpha values should be 0.7 to 0.85
 
 Random stuff to keep track of version wise:
 - 1.13 - 1.15:  Weird ass redstone_wire.json blockstate requirements, 1.16+ works fine with same file
@@ -21,7 +25,7 @@ Random stuff to keep track of version wise:
 - 1.20.2 - 1.21.1: rendertype_cutout.fsh used but replaced with "normal one" with no colored textures support - all textures have to be black & white
 - 1.21.2+: terrain.fsh used instead
 - 1.21.6+: a lot of changes to terrain.fsh 
-- 1.21.11: terrain.fsh has been BORKED WTF, needs adapting :despair: - idk how lol (I tried)
+- 1.21.11: wtf even happened to the rendering in this version but its okay cuz I fixed it, uses **very** diff terrain.fsh. gaps between pixels may need proper fixing?
 - 
 - respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13). not using strings tho so idk, for future I guess?
 -
