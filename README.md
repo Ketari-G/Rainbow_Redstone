@@ -3,35 +3,39 @@
 This is a fully vanilla compatible resource pack for **any** version 1.13 and above, that makes the redstone dust rainbow (meaning you don't need *any* mods to use this!). 
 This repo is mainly used for me to keep track of things and branches and file history and wtv else idk lol
 
+---
 
 ### To be done:
 - v1.0.0
-- split between sodium/vanilla game versions with rpo to make sure core shaders work
-- license file for resource pack itself
-- rpo tooltips are f\*ed, basically need all version testing
+    - somehow make *only* color support disabled but keep everything else rpo working when sodium is present
+    - transformation of textures/models to new color system
+    - rpo options import from v0.5.0
+    - rpo tooltips are f\*ed, basically need all version testing
+    - license file for resource pack itself
 - presets
+- other redstone components
 
-### Random stuff to keep track of color wise??:
-- transparent stuff in-game gets affected by alpha customization, need to find something more specific / not interfering with anything
+### Random stuff to keep track of color wise:
+- transparent stuff in-game gets affected by alpha customization in versions 1.21+ (didnt actually test but def not <=1.20.2)
 - stained glass 2/3 dots alpha = 0.61
 - stained glass outline alpha = 0.64
-- stained glass is only a problem in 1.21.2 + (could be earlier, too lazy to test, def not <=1.20.2), which means no color texture change needed
 - redstone dust alpha values for gray textrues should be 0.7 to 0.85
+- initial alpha value can be changed to anything, and is auto set up to take alpha_value + 0.15 amount of alpha values
 
 ### Random stuff to keep track of version wise:
 - 1.13 - 1.15:  Weird ass redstone_wire.json blockstate requirements, 1.16+ works fine with same file
 - <1.17: no core shaders - uses standard colored textures
 - 1.17 - 1.20.1: rendertype_cutout.fsh core shaders used with colored textures otherwise no 1.13 - 1.16 compat, due to overlays being strictly 1.20.2+. only downside is SS 0 color changing being a bit fucked up
-- 1.20+: rpo color customization officially available (rpo pack v9)
 - 1.20.2 - 1.21.1: rendertype_cutout.fsh used but replaced with "normal one" with no colored textures support - all textures have to be black & white
 - 1.21.2+: terrain.fsh used instead
-- 1.21.6+: a lot of changes to terrain.fsh 
+- 1.21.6+: changes to terrain.fsh 
 - 1.21.11: wtf even happened to the rendering in this version but its okay cuz I fixed it, uses **very** diff terrain.fsh. gaps between pixels may need proper fixing?
-- 
+
+### Random stuff to keep track of rpo wise:
 - respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13). not using strings tho so idk, for future I guess?
--
+- 1.20+: rpo color customization officially available (rpo pack v9) due to folder support not working properly <1.20
 
-
+---
 
 **Licence:** [
 
