@@ -28,14 +28,14 @@ void main() {
     vec4 custom = ColorModulator;
     vec4 base = vec4(1.0, 1.0, 1.0, 1.0);
 
-    float alpha_start = 0.6; //sets texture transparency start value
+    float alpha_start = 0.7; //sets texture transparency start value
     //make sure this is actually accurate to the true texture alpha value
 
     int power = int(round((alpha - alpha_start) * 100.0)); //gets int of every signal strengh
 
     if (power == 0) {
         custom = vec4(rainbowRedstone_color_ss0_r/255.0, rainbowRedstone_color_ss0_g/255.0, rainbowRedstone_color_ss0_b/255.0, 1.0);
-        base.rgb = vec3(0.0, 0.0, 0.0);
+        base.rgb = vec3(0.1406, 0.1406, 0.1406);
     }
     else if (power == 1) {
         custom = vec4(rainbowRedstone_color_ss1_r/255.0, rainbowRedstone_color_ss1_g/255.0, rainbowRedstone_color_ss1_b/255.0, 1.0);
@@ -100,14 +100,9 @@ void main() {
     
     vec4 color = texColor * vertexColor * custom;
 
-    if (alpha >= (alpha_start + 0.005) && alpha <= (alpha_start + 0.155)) {
+    if (alpha >= (alpha_start - 0.005) && alpha <= (alpha_start + 0.155)) {
         vec4 reverse = texColor / base; //gets original full bright texture + brightness diffs w/o color
         color = reverse * custom; //sets color to custom
-    }
-    else if (alpha >= (alpha_start - 0.005) && alpha <= (alpha_start + 0.005)) {
-        color = custom; 
-        //handles 0, but a lil stupidly cuz it won't have texture, just color. 
-        //no way to fix <1.20.2 or w/o rpo mod, unless I remove 1.13-1.16 compat feature entirely
     }
 
     if (color.a < 0.1) { 

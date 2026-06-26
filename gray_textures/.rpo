@@ -1,4 +1,0 @@
-{
-    condition: "!version('sodium', '*')",
-    fallback: "colored_textures/"
-}

@@ -7,8 +7,8 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
 ### To be done:
 - v1.0.0
-    - somehow make *only* color support disabled but keep everything else rpo working when sodium is present
-    - transformation of textures/models to new color system
+    - make only color customization disabled when sodium is present
+    - use full alpha dust when sodium is present
     - rpo options import from v0.5.0
     - rpo tooltips are f\*ed, basically need all version testing
     - license file for resource pack itself
@@ -24,12 +24,12 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
 ### Random stuff to keep track of version wise:
 - 1.13 - 1.15:  Weird ass redstone_wire.json blockstate requirements, 1.16+ works fine with same file
-- <1.17: no core shaders - uses standard colored textures
-- 1.17 - 1.20.1: rendertype_cutout.fsh core shaders used with colored textures otherwise no 1.13 - 1.16 compat, due to overlays being strictly 1.20.2+. only downside is SS 0 color changing being a bit fucked up
-- 1.20.2 - 1.21.1: rendertype_cutout.fsh used but replaced with "normal one" with no colored textures support - all textures have to be black & white
-- 1.21.2+: terrain.fsh used instead
-- 1.21.6+: changes to terrain.fsh 
-- 1.21.11: wtf even happened to the rendering in this version but its okay cuz I fixed it, uses **very** diff terrain.fsh. gaps between pixels may need proper fixing?
+- <1.17: no core shaders
+- 1.17 - 1.20.1: rendertype_cutout.fsh core shaders used
+- 1.20.2 - 1.21.1: rendertype_cutout.fsh used but changed with overlay due to <1.20 rpo folders being broken
+- 1.21.2 - 1.21.5: terrain.fsh used instead
+- 1.21.6 - 1.21.10: changes to terrain.fsh
+- 1.21.11+: wtf even happened to the rendering in this version but its okay cuz I fixed it, uses **very** diff terrain.fsh. gaps between pixels may need proper fixing?
 
 ### Random stuff to keep track of rpo wise:
 - respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13). not using strings tho so idk, for future I guess?

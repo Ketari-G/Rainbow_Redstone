@@ -9,12 +9,6 @@
   "overlays": {
     "entries": [
       {
-        "directory": "gray_textures",
-        "min_format": 18,
-        "max_format": 1000,
-        "formats": [18, 1000]
-      },
-      {
         "directory": "1_20_2",
         "min_format": 18,
         "max_format": 34,
