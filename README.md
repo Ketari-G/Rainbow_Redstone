@@ -7,8 +7,9 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
 ### To be done:
 - v1.0.0
+    - !!! alpha values proper implementation needed asap !!!
     - make only color customization disabled when sodium is present
-    - use full alpha dust when sodium is present: this can be done through making ~~rpo-based texture swap to full alpha for all shapes/models. annoying but cant see another way around it. do it in conjunction with rpo options !!!!!~~ actually use a single alpha .99 value for all redstone itself and separate the signal strengths by specific r/g/b values - much less files, much more compatible, but harder to work with since it's dependant on exact texture color
+    - use full alpha dust when sodium is present: use a single alpha .99 value for all redstone itself and separate the signal strengths by specific r/g/b values - much less files, much more compatible, but harder to work with since it's dependant on exact texture color
     - rpo options import from v0.5.0
     - rpo tooltips are f\*ed, basically need all version testing
     - license file for resource pack itself

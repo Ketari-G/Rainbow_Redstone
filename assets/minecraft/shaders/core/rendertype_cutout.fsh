@@ -28,12 +28,14 @@ void main() {
     vec4 custom = ColorModulator;
     vec4 base = vec4(1.0, 1.0, 1.0, 1.0);
 
-    float alpha_start = 0.7; //sets texture transparency start value
+    float rs_alpha = 0.99; //sets redstone dust texture transparency value
     //make sure this is actually accurate to the true texture alpha value
 
-    int power = int(round((alpha - alpha_start) * 100.0)); //gets int of every signal strengh
+    int red = int(round(texColor.r * 100));
 
-    if (power == 0) {
+    int power = int(round(alpha * 100));
+    
+    if (power == 99 && red == 14) {
         custom = vec4(rainbowRedstone_color_ss0_r/255.0, rainbowRedstone_color_ss0_g/255.0, rainbowRedstone_color_ss0_b/255.0, 1.0);
         base.rgb = vec3(0.1406, 0.1406, 0.1406);
     }
@@ -100,7 +102,7 @@ void main() {
     
     vec4 color = texColor * vertexColor * custom;
 
-    if (alpha >= (alpha_start - 0.005) && alpha <= (alpha_start + 0.155)) {
+    if (alpha >= (rs_alpha - 0.002) && alpha <= (rs_alpha + 0.002)) {
         vec4 reverse = texColor / base; //gets original full bright texture + brightness diffs w/o color
         color = reverse * custom; //sets color to custom
     }
