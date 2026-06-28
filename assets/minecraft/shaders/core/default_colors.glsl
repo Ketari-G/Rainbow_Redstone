@@ -56,7 +56,7 @@
     #define rainbowRedstone_color_ss12_g 216 //green
     #define rainbowRedstone_color_ss12_b 61 //blue
     //signal strengh 13
-    #define rainbowRedstone_color_ss13_r 249 //red
+    #define rainbowRedstone_color_ss13_r 245 //red
     #define rainbowRedstone_color_ss13_g 128 //green
     #define rainbowRedstone_color_ss13_b 29 //blue
     //signal strengh 14
@@ -64,7 +64,7 @@
     #define rainbowRedstone_color_ss14_g 46 //green
     #define rainbowRedstone_color_ss14_b 38 //blue
     //signal strengh 15
-    #define rainbowRedstone_color_ss15_r 103 //red
+    #define rainbowRedstone_color_ss15_r 125 //red
     #define rainbowRedstone_color_ss15_g 57 //green
     #define rainbowRedstone_color_ss15_b 23 //blue
 #endif

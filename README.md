@@ -7,9 +7,7 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
 ### To be done:
 - v1.0.0
-    - !!! alpha values proper implementation needed asap !!!
     - make only color customization disabled when sodium is present
-    - use full alpha dust when sodium is present: use a single alpha .99 value for all redstone itself and separate the signal strengths by specific r/g/b values - much less files, much more compatible, but harder to work with since it's dependant on exact texture color
     - rpo options import from v0.5.0
     - rpo tooltips are f\*ed, basically need all version testing
     - license file for resource pack itself
@@ -20,8 +18,7 @@ This repo is mainly used for me to keep track of things and branches and file hi
 - transparent stuff in-game gets affected by alpha customization in versions 1.21+ (didnt actually test but def not <=1.20.2)
 - stained glass 2/3 dots alpha = 0.61
 - stained glass outline alpha = 0.64
-- redstone dust alpha values for gray textrues should be 0.7 to 0.85
-- initial alpha value can be changed to anything, and is auto set up to take alpha_value + 0.15 amount of alpha values
+- redstone dust alpha = 0.99 for sodium compat. signal strengh detection works by checking for every individual red value of the texture. its not an "optimal" solution, but its the simplest as of right now
 
 ### Random stuff to keep track of version wise:
 - 1.13 - 1.15:  Weird ass redstone_wire.json blockstate requirements, 1.16+ works fine with same file
