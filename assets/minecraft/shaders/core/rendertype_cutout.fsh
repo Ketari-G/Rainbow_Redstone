@@ -28,81 +28,81 @@ void main() {
     vec4 custom = ColorModulator;
     vec4 base = vec4(1.0, 1.0, 1.0, 1.0);
 
-    float rs_alpha = 0.99; //sets redstone dust texture transparency value
+    int opacity = 99; //sets redstone dust texture transparency value
     //make sure this is actually accurate to the true texture alpha value
 
-    int red = int(round(texColor.r * 100));
-
-    int power = int(round(alpha * 100));
+    int red = int(round(texColor.r * 100)); //gets red color value from texture
     
-    if (power == 99 && red == 14) {
-        custom = vec4(rainbowRedstone_color_ss0_r/255.0, rainbowRedstone_color_ss0_g/255.0, rainbowRedstone_color_ss0_b/255.0, 1.0);
-        base.rgb = vec3(0.1406, 0.1406, 0.1406);
-    }
-    else if (power == 1) {
-        custom = vec4(rainbowRedstone_color_ss1_r/255.0, rainbowRedstone_color_ss1_g/255.0, rainbowRedstone_color_ss1_b/255.0, 1.0);
-        base.rgb = vec3(0.2784, 0.3098, 0.3216);
-    }
-    else if (power == 2) {
-        custom = vec4(rainbowRedstone_color_ss2_r/255.0, rainbowRedstone_color_ss2_g/255.0, rainbowRedstone_color_ss2_b/255.0, 1.0);
-        base.rgb = vec3(0.6118, 0.6157, 0.5922);
-    }
-    else if (power == 3) {
-        custom = vec4(rainbowRedstone_color_ss3_r/255.0, rainbowRedstone_color_ss3_g/255.0, rainbowRedstone_color_ss3_b/255.0, 1.0);
-        base.rgb = vec3(0.9529, 0.5490, 0.6667);
-    }
-    else if (power == 4) {
-        custom = vec4(rainbowRedstone_color_ss4_r/255.0, rainbowRedstone_color_ss4_g/255.0, rainbowRedstone_color_ss4_b/255.0, 1.0);
-        base.rgb = vec3(0.7765, 0.3098, 0.7412);
-    }
-    else if (power == 5) {
-        custom = vec4(rainbowRedstone_color_ss5_r/255.0, rainbowRedstone_color_ss5_g/255.0, rainbowRedstone_color_ss5_b/255.0, 1.0);
-        base.rgb = vec3(0.5373, 0.1961, 0.7176);
-    }
-    else if (power == 6) {
-        custom = vec4(rainbowRedstone_color_ss6_r/255.0, rainbowRedstone_color_ss6_g/255.0, rainbowRedstone_color_ss6_b/255.0, 1.0);
-        base.rgb = vec3(0.2353, 0.2667, 0.6627);
-    }
-    else if (power == 7) {
-        custom = vec4(rainbowRedstone_color_ss7_r/255.0, rainbowRedstone_color_ss7_g/255.0, rainbowRedstone_color_ss7_b/255.0, 1.0);
-        base.rgb = vec3(0.2275, 0.7020, 0.8549);
-    }
-    else if (power == 8) {
-        custom = vec4(rainbowRedstone_color_ss8_r/255.0, rainbowRedstone_color_ss8_g/255.0, rainbowRedstone_color_ss8_b/255.0, 1.0);
-        base.rgb = vec3(0.0863, 0.6118, 0.6157);
-    }
-    else if (power == 9) {
-        custom = vec4(rainbowRedstone_color_ss9_r/255.0, rainbowRedstone_color_ss9_g/255.0, rainbowRedstone_color_ss9_b/255.0, 1.0);
-        base.rgb = vec3(0.3647, 0.4863, 0.0824);
-    }
-    else if (power == 10) {
-        custom = vec4(rainbowRedstone_color_ss10_r/255.0, rainbowRedstone_color_ss10_g/255.0, rainbowRedstone_color_ss10_b/255.0, 1.0);
-        base.rgb = vec3(0.5020, 0.7804, 0.1216);
-    }
-    else if (power == 11) {
-        custom = vec4(rainbowRedstone_color_ss11_r/255.0, rainbowRedstone_color_ss11_g/255.0, rainbowRedstone_color_ss11_b/255.0, 1.0);
-        base.rgb = vec3(0.7608, 0.8353, 0.1961);
-    }
-    else if (power == 12) {
-        custom = vec4(rainbowRedstone_color_ss12_r/255.0, rainbowRedstone_color_ss12_g/255.0, rainbowRedstone_color_ss12_b/255.0, 1.0);
-        base.rgb = vec3(1.0000, 0.8471, 0.2392);
-    }
-    else if (power == 13) {
-        custom = vec4(rainbowRedstone_color_ss13_r/255.0, rainbowRedstone_color_ss13_g/255.0, rainbowRedstone_color_ss13_b/255.0, 1.0);
-        base.rgb = vec3(0.9765, 0.5020, 0.1137);
-    }
-    else if (power == 14) {
-        custom = vec4(rainbowRedstone_color_ss14_r/255.0, rainbowRedstone_color_ss14_g/255.0, rainbowRedstone_color_ss14_b/255.0, 1.0);
-        base.rgb = vec3(0.6902, 0.1804, 0.1490);
-    }
-    else if (power == 15) {
-        custom = vec4(rainbowRedstone_color_ss15_r/255.0, rainbowRedstone_color_ss15_g/255.0, rainbowRedstone_color_ss15_b/255.0, 1.0);
-        base.rgb = vec3(0.4039, 0.2235, 0.0902);
+    if (round(alpha * 100) == opacity) {
+        if (red == 12 || red == 13 || red == 14) { //signal strengh 0
+            custom = vec4(rainbowRedstone_color_ss0_r/255.0, rainbowRedstone_color_ss0_g/255.0, rainbowRedstone_color_ss0_b/255.0, 1.0);
+            base.rgb = vec3(0.1406, 0.1406, 0.1406);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 1
+            custom = vec4(rainbowRedstone_color_ss1_r/255.0, rainbowRedstone_color_ss1_g/255.0, rainbowRedstone_color_ss1_b/255.0, 1.0);
+            base.rgb = vec3(0.2784, 0.3098, 0.3216);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 2
+            custom = vec4(rainbowRedstone_color_ss2_r/255.0, rainbowRedstone_color_ss2_g/255.0, rainbowRedstone_color_ss2_b/255.0, 1.0);
+            base.rgb = vec3(0.6118, 0.6157, 0.5922);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 3
+            custom = vec4(rainbowRedstone_color_ss3_r/255.0, rainbowRedstone_color_ss3_g/255.0, rainbowRedstone_color_ss3_b/255.0, 1.0);
+            base.rgb = vec3(0.9529, 0.5490, 0.6667);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 4
+            custom = vec4(rainbowRedstone_color_ss4_r/255.0, rainbowRedstone_color_ss4_g/255.0, rainbowRedstone_color_ss4_b/255.0, 1.0);
+            base.rgb = vec3(0.7765, 0.3098, 0.7412);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 5
+            custom = vec4(rainbowRedstone_color_ss5_r/255.0, rainbowRedstone_color_ss5_g/255.0, rainbowRedstone_color_ss5_b/255.0, 1.0);
+            base.rgb = vec3(0.5373, 0.1961, 0.7176);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 6
+            custom = vec4(rainbowRedstone_color_ss6_r/255.0, rainbowRedstone_color_ss6_g/255.0, rainbowRedstone_color_ss6_b/255.0, 1.0);
+            base.rgb = vec3(0.2353, 0.2667, 0.6627);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 7
+            custom = vec4(rainbowRedstone_color_ss7_r/255.0, rainbowRedstone_color_ss7_g/255.0, rainbowRedstone_color_ss7_b/255.0, 1.0);
+            base.rgb = vec3(0.2275, 0.7020, 0.8549);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 8
+            custom = vec4(rainbowRedstone_color_ss8_r/255.0, rainbowRedstone_color_ss8_g/255.0, rainbowRedstone_color_ss8_b/255.0, 1.0);
+            base.rgb = vec3(0.0863, 0.6118, 0.6157);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 9
+            custom = vec4(rainbowRedstone_color_ss9_r/255.0, rainbowRedstone_color_ss9_g/255.0, rainbowRedstone_color_ss9_b/255.0, 1.0);
+            base.rgb = vec3(0.3647, 0.4863, 0.0824);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 10
+            custom = vec4(rainbowRedstone_color_ss10_r/255.0, rainbowRedstone_color_ss10_g/255.0, rainbowRedstone_color_ss10_b/255.0, 1.0);
+            base.rgb = vec3(0.5020, 0.7804, 0.1216);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 11
+            custom = vec4(rainbowRedstone_color_ss11_r/255.0, rainbowRedstone_color_ss11_g/255.0, rainbowRedstone_color_ss11_b/255.0, 1.0);
+            base.rgb = vec3(0.7608, 0.8353, 0.1961);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 12
+            custom = vec4(rainbowRedstone_color_ss12_r/255.0, rainbowRedstone_color_ss12_g/255.0, rainbowRedstone_color_ss12_b/255.0, 1.0);
+            base.rgb = vec3(1.0000, 0.8471, 0.2392);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 13
+            custom = vec4(rainbowRedstone_color_ss13_r/255.0, rainbowRedstone_color_ss13_g/255.0, rainbowRedstone_color_ss13_b/255.0, 1.0);
+            base.rgb = vec3(0.9765, 0.5020, 0.1137);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 14
+            custom = vec4(rainbowRedstone_color_ss14_r/255.0, rainbowRedstone_color_ss14_g/255.0, rainbowRedstone_color_ss14_b/255.0, 1.0);
+            base.rgb = vec3(0.6902, 0.1804, 0.1490);
+        }
+        else if (red == 12 || red == 13 || red == 14) { //signal strengh 15
+            custom = vec4(rainbowRedstone_color_ss15_r/255.0, rainbowRedstone_color_ss15_g/255.0, rainbowRedstone_color_ss15_b/255.0, 1.0);
+            base.rgb = vec3(0.4039, 0.2235, 0.0902);
+        }
     }
     
     vec4 color = texColor * vertexColor * custom;
 
-    if (alpha >= (rs_alpha - 0.002) && alpha <= (rs_alpha + 0.002)) {
+    if (round(alpha * 100) == opacity) {
         vec4 reverse = texColor / base; //gets original full bright texture + brightness diffs w/o color
         color = reverse * custom; //sets color to custom
     }

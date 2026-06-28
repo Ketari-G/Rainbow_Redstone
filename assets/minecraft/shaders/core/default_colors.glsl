@@ -4,9 +4,9 @@
 
 #ifndef respackopts_loaded
     //signal strengh 0
-    #define rainbowRedstone_color_ss0_r 256 //red
-    #define rainbowRedstone_color_ss0_g 256 //green
-    #define rainbowRedstone_color_ss0_b 256 //blue
+    #define rainbowRedstone_color_ss0_r 0 //red
+    #define rainbowRedstone_color_ss0_g 0 //green
+    #define rainbowRedstone_color_ss0_b 0 //blue
     //signal strengh 1
     #define rainbowRedstone_color_ss1_r 71 //red
     #define rainbowRedstone_color_ss1_g 79 //green
