@@ -7,7 +7,6 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
 ### To be done:
 - v1.0.0
-    - make only color customization disabled when sodium is present
     - rpo options import from v0.5.0
     - rpo tooltips are f\*ed, basically need all version testing
     - license file for resource pack itself

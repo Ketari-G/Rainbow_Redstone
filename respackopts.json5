@@ -85,6 +85,11 @@
                 g: {type: "integer", default: 57},
                 b: {type: "integer", default: 23}
             }
+        },
+        dust_type: {
+            type: "enum",
+            default: "vanilla",
+            values: ["vanilla", "wide4", "wide6"]
         }
         
     }

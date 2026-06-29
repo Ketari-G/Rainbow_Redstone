@@ -1,6 +1,6 @@
 {
     "parent": "block/redstone_dust/side/base",
     "textures": {
-        "line": "block/redstone_dust/line1/8"
+        "line": "block/redstone_dust/line1/vanilla/8"
     }
 }

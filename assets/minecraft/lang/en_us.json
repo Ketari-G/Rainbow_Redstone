@@ -3,6 +3,9 @@
 	"rpo.rainbowRedstone.title": "Rainbow Redstone",
 
 	"rpo.rainbowRedstone.color": "Color Customization",
+	"rpo.tooltip.rainbowRedstone.color": "This feature is only available in vanilla. If you have sodium, this wont work, other options will tho.",
+	"rpo.rainbowRedstone.color.tooltip": "This feature is only available in vanilla. If you have sodium, this wont work, other options will tho.",
+
 	"rpo.rainbowRedstone.color.ss0": "Signal Strength 0",
 	"rpo.tooltip.rainbowRedstone.color.ss0": "Values have a min of 0 and a max of 255",
 	"rpo.rainbowRedstone.color.ss0.tooltip": "Values have a min of 0 and a max of 255",
