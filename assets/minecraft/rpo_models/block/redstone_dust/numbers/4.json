@@ -1,0 +1,16 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "block/redstone_dust_dot",
+        "line": "block/redstone_dust/numbers/nonum/4"
+    },
+    "elements": [
+        {   "from": [ 6, ${offset}, 6 ],
+            "to": [ 10, ${offset}, 10 ],
+            "shade": false,
+            "faces": {
+                "up": { "uv": [ 0, 0, 16, 16], "texture": "#line" }
+            }
+        }
+    ]
+}

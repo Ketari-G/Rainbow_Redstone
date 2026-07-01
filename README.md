@@ -7,7 +7,7 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
 ### To be done:
 - v1.0.0
-    - rpo options import from v0.5.0
+    - rpo options import from v0.5.0 - only height off surface left to do
     - rpo tooltips are f\*ed, basically need all version testing
     - license file for resource pack itself
 - presets
@@ -31,6 +31,8 @@ This repo is mainly used for me to keep track of things and branches and file hi
 ### Random stuff to keep track of rpo wise:
 - respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13). not using strings tho so idk, for future I guess?
 - 1.20+: rpo color customization officially available (rpo pack v9) due to folder support not working properly <1.20
+- somewhere <1.20 (?): integer in respackopts.json5 are not supported?? use number instead
+- idefk whats happening with this shit <1.20 like, I'm straight up considering not supporing respackopts in those versions because its so fucked
 
 ---
 

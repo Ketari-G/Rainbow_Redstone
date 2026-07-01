@@ -1,0 +1,8 @@
+{
+    condition: "dust_numbers.nonum",
+    fallback: [
+      "assets/minecraft/textures/block/redstone_dust/numbers/num1/2.png",
+      "assets/minecraft/textures/block/redstone_dust/numbers/num2/2.png",
+      "assets/minecraft/textures/block/redstone_dust/numbers/num3/2.png"
+    ]
+}
