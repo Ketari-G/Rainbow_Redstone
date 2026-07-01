@@ -1,89 +1,89 @@
 {
     id: "rainbowRedstone",
-    version: 6,
+    version: 12,
     capabilities: ["FileFilter", "DirFilter"],
     conf: {
         // Your config options will go here
         rcolor: {
             ss0: {
-                r: {type: "integer", default: 0},
-                g: {type: "integer", default: 0},
-                b: {type: "integer", default: 0}
+                r: {type: "number", default: 0},
+                g: {type: "number", default: 0},
+                b: {type: "number", default: 0}
             },
             ss1: {
-                r: {type: "integer", default: 71},
-                g: {type: "integer", default: 79},
-                b: {type: "integer", default: 82}
+                r: {type: "number", default: 71},
+                g: {type: "number", default: 79},
+                b: {type: "number", default: 82}
             },
             ss2: {
-                r: {type: "integer", default: 156},
-                g: {type: "integer", default: 157},
-                b: {type: "integer", default: 151}
+                r: {type: "number", default: 156},
+                g: {type: "number", default: 157},
+                b: {type: "number", default: 151}
             },
             ss3: {
-                r: {type: "integer", default: 243},
-                g: {type: "integer", default: 140},
-                b: {type: "integer", default: 170}
+                r: {type: "number", default: 243},
+                g: {type: "number", default: 140},
+                b: {type: "number", default: 170}
             },
             ss4: {
-                r: {type: "integer", default: 198},
-                g: {type: "integer", default: 79},
-                b: {type: "integer", default: 189}
+                r: {type: "number", default: 198},
+                g: {type: "number", default: 79},
+                b: {type: "number", default: 189}
             },
             ss5: {
-                r: {type: "integer", default: 137},
-                g: {type: "integer", default: 50},
-                b: {type: "integer", default: 183}
+                r: {type: "number", default: 137},
+                g: {type: "number", default: 50},
+                b: {type: "number", default: 183}
             },
             ss6: {
-                r: {type: "integer", default: 60},
-                g: {type: "integer", default: 68},
-                b: {type: "integer", default: 169}
+                r: {type: "number", default: 60},
+                g: {type: "number", default: 68},
+                b: {type: "number", default: 169}
             },
             ss7: {
-                r: {type: "integer", default: 58},
-                g: {type: "integer", default: 179},
-                b: {type: "integer", default: 218}
+                r: {type: "number", default: 58},
+                g: {type: "number", default: 179},
+                b: {type: "number", default: 218}
             },
             ss8: {
-                r: {type: "integer", default: 22},
-                g: {type: "integer", default: 156},
-                b: {type: "integer", default: 157}
+                r: {type: "number", default: 22},
+                g: {type: "number", default: 156},
+                b: {type: "number", default: 157}
             },
             ss9: {
-                r: {type: "integer", default: 93},
-                g: {type: "integer", default: 124},
-                b: {type: "integer", default: 21}
+                r: {type: "number", default: 93},
+                g: {type: "number", default: 124},
+                b: {type: "number", default: 21}
             },
             ss10: {
-                r: {type: "integer", default: 128},
-                g: {type: "integer", default: 199},
-                b: {type: "integer", default: 31}
+                r: {type: "number", default: 128},
+                g: {type: "number", default: 199},
+                b: {type: "number", default: 31}
             },
             ss11: {
-                r: {type: "integer", default: 194},
-                g: {type: "integer", default: 213},
-                b: {type: "integer", default: 50}
+                r: {type: "number", default: 194},
+                g: {type: "number", default: 213},
+                b: {type: "number", default: 50}
             },
             ss12: {
-                r: {type: "integer", default: 255},
-                g: {type: "integer", default: 216},
-                b: {type: "integer", default: 61}
+                r: {type: "number", default: 255},
+                g: {type: "number", default: 216},
+                b: {type: "number", default: 61}
             },
             ss13: {
-                r: {type: "integer", default: 249},
-                g: {type: "integer", default: 128},
-                b: {type: "integer", default: 29}
+                r: {type: "number", default: 249},
+                g: {type: "number", default: 128},
+                b: {type: "number", default: 29}
             },
             ss14: {
-                r: {type: "integer", default: 176},
-                g: {type: "integer", default: 46},
-                b: {type: "integer", default: 38}
+                r: {type: "number", default: 176},
+                g: {type: "number", default: 46},
+                b: {type: "number", default: 38}
             },
             ss15: {
-                r: {type: "integer", default: 103},
-                g: {type: "integer", default: 57},
-                b: {type: "integer", default: 23}
+                r: {type: "number", default: 103},
+                g: {type: "number", default: 57},
+                b: {type: "number", default: 23}
             }
         },
         dustItem: {
@@ -101,9 +101,9 @@
             default: 0.25
         },
         ncolor: {
-            r: {type: "integer", default: 255},
-            g: {type: "integer", default: 255},
-            b: {type: "integer", default: 255}
+            r: {type: "number", default: 255},
+            g: {type: "number", default: 255},
+            b: {type: "number", default: 255}
         },
          dust_numbers: {
             type: "enum",

@@ -1,5 +1,5 @@
 {
   "expansions": {
-    "offset": "{rainbowRedstone.dustHeight}"
+    "offset": "rainbowRedstone.dustHeight"
   }
 }
