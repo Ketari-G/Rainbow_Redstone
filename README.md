@@ -6,8 +6,6 @@ This repo is mainly used for me to keep track of things and branches and file hi
 ---
 
 ### To be done:
-- v1.0.0
-    - license file for resource pack itself
 - v1.1.0
     - add shapes (flat 16x16 square, 4x4 and 6x6 with shaded sides)
 - presets
