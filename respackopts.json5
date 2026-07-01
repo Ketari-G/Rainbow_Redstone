@@ -4,7 +4,7 @@
     capabilities: ["FileFilter", "DirFilter"],
     conf: {
         // Your config options will go here
-        color: {
+        rcolor: {
             ss0: {
                 r: {type: "integer", default: 0},
                 g: {type: "integer", default: 0},
@@ -96,14 +96,19 @@
             default: "vanilla",
             values: ["vanilla", "wide4", "wide6"]
         },
+        dustHeight: {
+            type: "number",
+            default: 0.25
+        },
+        ncolor: {
+            r: {type: "integer", default: 255},
+            g: {type: "integer", default: 255},
+            b: {type: "integer", default: 255}
+        },
          dust_numbers: {
             type: "enum",
             default: "nonum",
             values: ["nonum", "num1", "num2", "num3"]
-        },
-        dustHeight: {
-            type: "number",
-            default: 0.25
         },
         numHeight: {
             type: "number",

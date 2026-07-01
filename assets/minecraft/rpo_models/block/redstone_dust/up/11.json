@@ -5,8 +5,8 @@
         "line": "block/redstone_dust/line0/vanilla/11"
     },
     "elements": [
-        {   "from": [ 0, ${offset}, 0.25 ],
-            "to": [ 16, ${offset}, 0.25 ],
+        {   "from": [ 0, 0, ${offset} ],
+            "to": [ 16, 16, ${offset} ],
             "shade": false,
             "faces": {
                 "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#line", "tintindex": -1 },
