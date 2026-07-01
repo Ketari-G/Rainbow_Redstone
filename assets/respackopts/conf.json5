@@ -104,6 +104,10 @@
         dustHeight: {
             type: "number",
             default: 0.25
+        },
+        numHeight: {
+            type: "number",
+            default: 0.05
         }
         
     }

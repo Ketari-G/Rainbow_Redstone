@@ -121,7 +121,11 @@
     "rpo.rainbowRedstone.dust_numbers.num3": "Double",
 
     "rpo.rainbowRedstone.dustHeight": "Redstone dust height:§7 distance of it from surface it's on",
-    "rpo.tooltip.rainbowRedstone.dustHeight": "Min: [-16], Max: [31.95]. Recommended range: 0.01 - 0.25",
-    "rpo.rainbowRedstone.dustHeight.tooltip": "Min: [-16], Max: [31.95]. Recommended range: 0.01 - 0.25"
+    "rpo.tooltip.rainbowRedstone.dustHeight": "Min: [-16], Max: [32]. Recommended range: 0.01 - 0.25",
+    "rpo.rainbowRedstone.dustHeight.tooltip": "Min: [-16], Max: [32]. Recommended range: 0.01 - 0.25",
+
+    "rpo.rainbowRedstone.numHeight": "Number height:§7 distance of it from the redstone dust it's on",
+    "rpo.tooltip.rainbowRedstone.numHeight": "Technically no limit but recommended to keep in the 0.01 - 0.05 range",
+    "rpo.rainbowRedstone.numHeight.tooltip": "Technically no limit but recommended to keep in the 0.01 - 0.05 range"
 
 }
