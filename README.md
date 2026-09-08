@@ -7,7 +7,9 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
 ### To be done:
 - v1.1.0
-    - add shapes (flat 16x16 square, 4x4 and 6x6 with shaded sides)
+    - add shapes (textures): flat 16x16 square, 4x4 and 6x6 with shaded sides
+    - add models: 16x16x16 cube, 3d wires, etc
+    - make models use existing textures for size savings™
 - presets
 - other redstone components
 
@@ -34,12 +36,18 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
 ---
 
-**Licence:** [
+### Resource pack structure (latest version)
 
-    This licence applies to ONLY this repository, *not* the resource pack distributed on modrinth or curseforge.
+
+
+---
+
+**License:** [
+
+    This license applies to ONLY this repository and all files within, *not* the resource pack distributed on modrinth or curseforge.
     
     You (user, company, anyone or anything, any form of legal entity) is not allowed to do anything with this repository (ARR: All Rights Reserved) apart from the following exceptions (these are things you are **allowed** to do):
-    1. View and study the files as well as the file history.
+    1. View and study the files as well as the file and commit history.
     2. Download and use any folders or files for personal use only (distribution of files without my (Ketari) approval is prohibited).
 
     To be extra clear, here are some (but not all) of the things you are **not** allowed to do:
@@ -49,6 +57,6 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
     Extra notes/rules/obligations:
     1. Upon forking, cloning, copying, or any other similar act of obtaining this repository, you **must** include this licence, unchanged.
-    2. Upon creating a pull request or any other similar request to modify any files or parts of the repository, you give me full control over any files accepted/merged into any branch of this repo, including their liscence.
+    2. Upon creating a pull request or any other similar request to modify any files or parts of the repository, you give me full control over any files accepted/merged into any branch of this repo, including their license.
     3. I (Ketari) retain the right to deny or allow any usage of this repo in any way, shape or form by anyone or anything for any reason.
 ]
