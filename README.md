@@ -38,7 +38,104 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
 ### Resource pack structure (latest version)
 
-
+└── Rainbow_Redstone/
+    ├── 1_20_2/
+    │   └── assets/
+    │       └── minecraft/
+    │           └── shaders/
+    │               └── core/
+    │                   └── rendertype_cutout.fsh
+    ├── 1_21_2/
+    │   └── assets/
+    │       └── minecraft/
+    │           └── shaders/
+    │               └── core/
+    │                   └── terrain.fsh
+    ├── 1_21_6/
+    │   └── assets/
+    │       └── minecraft/
+    │           └── shaders/
+    │               └── core/
+    │                   └── terrain.fsh
+    ├── 1_21_11/
+    │   └── assets/
+    │       └── minecraft/
+    │           └── shaders/
+    │               └── core/
+    │                   └── terrain.fsh
+    ├── assets/
+    │   ├── minecraft/
+    │   │   ├── blockstates/
+    │   │   │   └── redstone_wire.json
+    │   │   ├── lang/
+    │   │   │   └── en_us.json
+    │   │   ├── models/
+    │   │   │   ├── .rpo
+    │   │   │   └── block/
+    │   │   │       └── redstone_dust/
+    │   │   │           ├── dot/
+    │   │   │           ├── side/
+    │   │   │           │   └── base.json
+    │   │   │           ├── side0/
+    │   │   │           ├── side1/
+    │   │   │           ├── side_alt/
+    │   │   │           │   └── base.json
+    │   │   │           ├── side_alt1/
+    │   │   │           ├── side_alt0/
+    │   │   │           ├── up/
+    │   │   │           └── numbers/
+    │   │   ├── rpo_models/
+    │   │   │   └── block/
+    │   │   │       └── redstone_dust/
+    │   │   │           ├── dot/
+    │   │   │           ├── side/
+    │   │   │           │   ├── base.json
+    │   │   │           │   └── base.json.rpo
+    │   │   │           ├── side0/
+    │   │   │           ├── side1/
+    │   │   │           ├── side_alt/
+    │   │   │           │   ├── base.json
+    │   │   │           │   └── base.json.rpo
+    │   │   │           ├── side_alt1/
+    │   │   │           ├── side_alt0/
+    │   │   │           ├── up/
+    │   │   │           └── numbers/
+    │   │   ├── shaders/
+    │   │   │   └── core/
+    │   │   │       ├── default_colors.glsl
+    │   │   │       └── rendertype_cutout.fsh
+    │   │   └── textures/
+    │   │       ├── item/
+    │   │       │   ├── redstone.png
+    │   │       │   ├── redstone.png.rpo
+    │   │       │   └── rpo_alts/
+    │   │       │       ├── vanilla_redstone.png
+    │   │       │       └── vanilla_redstone.png.rpo
+    │   │       └── block/
+    │   │           └── redstone_dust/
+    │   │               ├── particle.png
+    │   │               ├── dot/
+    │   │               │   ├── vanilla/
+    │   │               │   ├── 4_wide/
+    │   │               │   └── 6_wide/
+    │   │               ├── line0/
+    │   │               │   ├── vanilla/
+    │   │               │   ├── 4_wide/
+    │   │               │   └── 6_wide/
+    │   │               ├── line1/
+    │   │               │   ├── vanilla/
+    │   │               │   ├── 4_wide/
+    │   │               │   └── 6_wide/
+    │   │               └── numbers/
+    │   │                   ├── nonum/
+    │   │                   ├── num1/
+    │   │                   ├── num2/
+    │   │                   └── num3/
+    │   └── respackopts/
+    │       └── conf.json5
+    ├── pack.mcmeta
+    ├── pack.png
+    └── respackopts.json5
 
 ---
 
