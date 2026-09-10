@@ -36,55 +36,39 @@ This repo is mainly used for me to keep track of things and branches and file hi
 
 ---
 
-### Resource pack structure (latest version)
+<details>
+  <summary>Resource pack structure (v1.0.0)</summary>
+  
 ```
 └── Rainbow_Redstone/
-    ├── 1_20_2/
-    │   └── assets/
-    │       └── minecraft/
-    │           └── shaders/
-    │               └── core/
-    │                   └── rendertype_cutout.fsh
-    ├── 1_21_2/
-    │   └── assets/
-    │       └── minecraft/
-    │           └── shaders/
-    │               └── core/
-    │                   └── terrain.fsh
-    ├── 1_21_6/
-    │   └── assets/
-    │       └── minecraft/
-    │           └── shaders/
-    │               └── core/
-    │                   └── terrain.fsh
-    ├── 1_21_11/
-    │   └── assets/
-    │       └── minecraft/
-    │           └── shaders/
-    │               └── core/
-    │                   └── terrain.fsh
+    ├── 1_20_2/ (+)
+    │   └── rendertype_cutout.fsh
+    ├── 1_21_2/ (+)
+    │   └── terrain.fsh
+    ├── 1_21_6/ (+)
+    │   └── terrain.fsh
+    ├── 1_21_11/ (+)
+    │   └── terrain.fsh
     ├── assets/
     │   ├── minecraft/
     │   │   ├── blockstates/
-    │   │   │   └── redstone_wire.json
-    │   │   ├── lang/
-    │   │   │   └── en_us.json
+    │   │   │   └── redstone_wire.json (single base blockstate file, dont need more rn (!))
     │   │   ├── models/
-    │   │   │   ├── .rpo
+    │   │   │   ├── .rpo (toggles between normal and height-controlled)
     │   │   │   └── block/
     │   │   │       └── redstone_dust/
     │   │   │           ├── dot/
     │   │   │           ├── side/
-    │   │   │           │   └── base.json
+    │   │   │           │   └── base.json (customized by side0 and side1)
     │   │   │           ├── side0/
     │   │   │           ├── side1/
     │   │   │           ├── side_alt/
-    │   │   │           │   └── base.json
+    │   │   │           │   └── base.json (customized by side_alt0 and side_alt1)
     │   │   │           ├── side_alt1/
     │   │   │           ├── side_alt0/
-    │   │   │           ├── up/
-    │   │   │           └── numbers/
-    │   │   ├── rpo_models/
+    │   │   │           ├── up/ (might need changing in the future)
+    │   │   │           └── numbers/ (separate to make it easier to organize)
+    │   │   ├── rpo_models/ (height customization lol with .rpo files)
     │   │   │   └── block/
     │   │   │       └── redstone_dust/
     │   │   │           ├── dot/
@@ -102,19 +86,19 @@ This repo is mainly used for me to keep track of things and branches and file hi
     │   │   │           └── numbers/
     │   │   ├── shaders/
     │   │   │   └── core/
-    │   │   │       ├── default_colors.glsl
-    │   │   │       └── rendertype_cutout.fsh
+    │   │   │       ├── default_colors.glsl (default colors file that can be manually changed)
+    │   │   │       └── rendertype_cutout.fsh (default 1.17+ shaders)
     │   │   └── textures/
     │   │       ├── item/
     │   │       │   ├── redstone.png
     │   │       │   ├── redstone.png.rpo
-    │   │       │   └── rpo_alts/
+    │   │       │   └── rpo_alts/ (here to be able to add more variants)
     │   │       │       ├── vanilla_redstone.png
     │   │       │       └── vanilla_redstone.png.rpo
     │   │       └── block/
     │   │           └── redstone_dust/
     │   │               ├── particle.png
-    │   │               ├── dot/
+    │   │               ├── dot/ (easier organization)
     │   │               │   ├── vanilla/
     │   │               │   ├── 4_wide/
     │   │               │   └── 6_wide/
@@ -131,12 +115,15 @@ This repo is mainly used for me to keep track of things and branches and file hi
     │   │                   ├── num1/
     │   │                   ├── num2/
     │   │                   └── num3/
-    │   └── respackopts/
+    │   └── respackopts/ (needed for older rpo ver I think? might be redundant in 1.20+)
     │       └── conf.json5
     ├── pack.mcmeta
     ├── pack.png
     └── respackopts.json5
 ```
+
+</details>
+
 ---
 
 **License:** [
