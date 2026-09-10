@@ -37,7 +37,7 @@ This repo is mainly used for me to keep track of things and branches and file hi
 ---
 
 ### Resource pack structure (latest version)
-
+```
 └── Rainbow_Redstone/
     ├── 1_20_2/
     │   └── assets/
@@ -136,7 +136,7 @@ This repo is mainly used for me to keep track of things and branches and file hi
     ├── pack.mcmeta
     ├── pack.png
     └── respackopts.json5
-
+```
 ---
 
 **License:** [
