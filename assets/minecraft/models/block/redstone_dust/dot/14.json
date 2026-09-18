@@ -2,15 +2,15 @@
     "ambientocclusion": false,
     "textures": {
         "particle": "block/redstone_dust/particle",
-        "line": "block/redstone_dust/dot/vanilla/14"
+        "line": "block/redstone_dust/dot/2345"
     },
     "elements": [
-        {   "from": [ 0, 0.25, 0 ],
-            "to": [ 16, 0.25, 16 ],
+        {   "from": [ 4, 0.25, 4 ],
+            "to": [ 12, 0.25, 12 ],
             "shade": false,
             "faces": {
-                "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#line", "tintindex": -1 },
-                "down": { "uv": [ 0, 16, 16, 0 ], "texture": "#line", "tintindex": -1 }
+                "up": { "uv": [ 0, 8, 8, 16 ], "texture": "#line", "tintindex": -1 },
+                "down": { "uv": [ 0, 16, 8, 8 ], "texture": "#line", "tintindex": -1 }
             }
         }
     ]
