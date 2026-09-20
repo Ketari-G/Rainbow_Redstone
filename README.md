@@ -20,7 +20,7 @@ This repo is mainly used for me to keep track of things and branches and file hi
 - redstone dust alpha = 0.99 for sodium compat. signal strengh detection works by checking for every individual red value of the texture. its not an "optimal" solution, but its the simplest as of right now
 
 ### Random stuff to keep track of version wise:
-- 1.13 - 1.15:  Weird ass redstone_wire.json blockstate requirements, 1.16+ works fine with same file
+- 1.13 - 1.15: redstone_wire.json blockstate needs to declare "line" redstone for any side to use the respective line model for both opposite cardinal directions *(n-s/w-e)*, otherwise dust displays wrong *(cut in half)* due to "illegal" states being legal back then *(single dir line)*. 1.16+ works fine with same file, with a caveat that illegal states are no longer visually displayed as illegal *(which vanilla does do)*. may need changing/re-writing? *(for specific models requiring the ability to take up only half the block they're on, like floating 3D)*
 - <1.17: no core shaders
 - 1.17 - 1.20.1: rendertype_cutout.fsh core shaders used
 - 1.20.2 - 1.21.1: rendertype_cutout.fsh used but changed with overlay due to <1.20 rpo folders being broken
