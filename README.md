@@ -6,7 +6,11 @@ Main feature: merging all textures together as compactly as possible, making use
 
 **License: same as main branch**
 
-TODO
-- line0 & line1 compact
-- numb compact
-- rpo
+stuff to keep track of:
+- rpo resource expansion (json replacements) are available from 1.17.1+
+- rpo presets are from 1.21.1+
+- see variant ideas
+- single n/s flat models "done" - missing proper texture connections
+- next: single w/s flat models
+- blockstate file untouched for now - do models first
+- 
