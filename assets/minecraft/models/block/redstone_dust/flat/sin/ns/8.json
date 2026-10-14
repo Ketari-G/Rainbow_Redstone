@@ -1,6 +1,17 @@
 {
-    "parent": "block/redstone_dust/flat/sin/base",
+    "ambientocclusion": false,
     "textures": {
-        "line": "block/redstone_dust/line0/8"
-    }
+        "particle": "block/redstone_dust/particle",
+        "line": "block/redstone_dust/ns/8901"
+    },
+    "elements": [
+        {   "from": [ 6, 0.25, 0 ],
+            "to": [ 10, 0.25, 16 ],
+            "shade": false,
+            "faces": {
+                "up": { "uv": [ 0, 0, 4, 16 ], "texture": "#line", "tintindex": -1 },
+                "down": { "uv": [ 0, 16, 4, 0 ], "texture": "#line", "tintindex": -1 }
+            }
+        }
+    ]
 }

@@ -10,7 +10,6 @@ stuff to keep track of:
 - rpo resource expansion (json replacements) are available from 1.17.1+
 - rpo presets are from 1.21.1+
 - see variant ideas
-- single n/s flat models "done" - missing proper texture connections
-- next: single w/s flat models
-- blockstate file untouched for now - do models first
+- flat single models done, all textures done
+- blockstate file matches them, BUT needs proper updating for new system to handle sin/mult/wtv
 - 
