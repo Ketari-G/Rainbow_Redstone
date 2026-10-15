@@ -12,4 +12,7 @@ stuff to keep track of:
 - see variant ideas
 - flat single models done, all textures done
 - blockstate file matches them, BUT needs proper updating for new system to handle sin/mult/wtv
+- shaders 26.3 need #include fix (change from #moj_import to #include)
+- dot +x and +z are both +0.13 due to weird texture scaling issue (fixed in 1.21.11 but kept everywehre for simplicity for now)
 - 
+
