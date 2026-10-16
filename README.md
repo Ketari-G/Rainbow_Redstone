@@ -14,5 +14,7 @@ stuff to keep track of:
 - blockstate file matches them, BUT needs proper updating for new system to handle sin/mult/wtv
 - shaders 26.3 need #include fix (change from #moj_import to #include)
 - dot +x and +z are both +0.13 due to weird texture scaling issue (fixed in 1.21.11 but kept everywehre for simplicity for now)
+  - this issue is caused by FaceBakery shrinking every face's UVs slightly towards the centre of the face's UV area (lerp by 4 / atlas size) to stop atlas bleeding
+  - I am unsure on why this happens specifically with <16px textures/models and only on +x/+z
 - 
 
