@@ -2,285 +2,285 @@
   "multipart": [
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "0"},
-        {"north": "side|up", "east": "side|up", "power": "0"},
-        {"north": "side|up", "west": "side|up", "power": "0"},
-        {"south": "side|up", "east": "side|up", "power": "0"},
-        {"south": "side|up", "west": "side|up", "power": "0"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "0" },
+        { "north": "side|up", "east": "side|up", "power": "0" },
+        { "north": "side|up", "west": "side|up", "power": "0" },
+        { "south": "side|up", "east": "side|up", "power": "0" },
+        { "south": "side|up", "west": "side|up", "power": "0" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/0" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "1"},
-        {"north": "side|up", "east": "side|up", "power": "1"},
-        {"north": "side|up", "west": "side|up", "power": "1"},
-        {"south": "side|up", "east": "side|up", "power": "1"},
-        {"south": "side|up", "west": "side|up", "power": "1"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "1" },
+        { "north": "side|up", "east": "side|up", "power": "1" },
+        { "north": "side|up", "west": "side|up", "power": "1" },
+        { "south": "side|up", "east": "side|up", "power": "1" },
+        { "south": "side|up", "west": "side|up", "power": "1" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/1" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "2"},
-        {"north": "side|up", "east": "side|up", "power": "2"},
-        {"north": "side|up", "west": "side|up", "power": "2"},
-        {"south": "side|up", "east": "side|up", "power": "2"},
-        {"south": "side|up", "west": "side|up", "power": "2"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "2" },
+        { "north": "side|up", "east": "side|up", "power": "2" },
+        { "north": "side|up", "west": "side|up", "power": "2" },
+        { "south": "side|up", "east": "side|up", "power": "2" },
+        { "south": "side|up", "west": "side|up", "power": "2" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/2" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "3"},
-        {"north": "side|up", "east": "side|up", "power": "3"},
-        {"north": "side|up", "west": "side|up", "power": "3"},
-        {"south": "side|up", "east": "side|up", "power": "3"},
-        {"south": "side|up", "west": "side|up", "power": "3"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "3" },
+        { "north": "side|up", "east": "side|up", "power": "3" },
+        { "north": "side|up", "west": "side|up", "power": "3" },
+        { "south": "side|up", "east": "side|up", "power": "3" },
+        { "south": "side|up", "west": "side|up", "power": "3" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/3" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "4"},
-        {"north": "side|up", "east": "side|up", "power": "4"},
-        {"north": "side|up", "west": "side|up", "power": "4"},
-        {"south": "side|up", "east": "side|up", "power": "4"},
-        {"south": "side|up", "west": "side|up", "power": "4"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "4" },
+        { "north": "side|up", "east": "side|up", "power": "4" },
+        { "north": "side|up", "west": "side|up", "power": "4" },
+        { "south": "side|up", "east": "side|up", "power": "4" },
+        { "south": "side|up", "west": "side|up", "power": "4" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/4" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "5"},
-        {"north": "side|up", "east": "side|up", "power": "5"},
-        {"north": "side|up", "west": "side|up", "power": "5"},
-        {"south": "side|up", "east": "side|up", "power": "5"},
-        {"south": "side|up", "west": "side|up", "power": "5"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "5" },
+        { "north": "side|up", "east": "side|up", "power": "5" },
+        { "north": "side|up", "west": "side|up", "power": "5" },
+        { "south": "side|up", "east": "side|up", "power": "5" },
+        { "south": "side|up", "west": "side|up", "power": "5" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/5" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "6"},
-        {"north": "side|up", "east": "side|up", "power": "6"},
-        {"north": "side|up", "west": "side|up", "power": "6"},
-        {"south": "side|up", "east": "side|up", "power": "6"},
-        {"south": "side|up", "west": "side|up", "power": "6"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "6" },
+        { "north": "side|up", "east": "side|up", "power": "6" },
+        { "north": "side|up", "west": "side|up", "power": "6" },
+        { "south": "side|up", "east": "side|up", "power": "6" },
+        { "south": "side|up", "west": "side|up", "power": "6" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/6" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "7"},
-        {"north": "side|up", "east": "side|up", "power": "7"},
-        {"north": "side|up", "west": "side|up", "power": "7"},
-        {"south": "side|up", "east": "side|up", "power": "7"},
-        {"south": "side|up", "west": "side|up", "power": "7"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "7" },
+        { "north": "side|up", "east": "side|up", "power": "7" },
+        { "north": "side|up", "west": "side|up", "power": "7" },
+        { "south": "side|up", "east": "side|up", "power": "7" },
+        { "south": "side|up", "west": "side|up", "power": "7" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/7" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "8"},
-        {"north": "side|up", "east": "side|up", "power": "8"},
-        {"north": "side|up", "west": "side|up", "power": "8"},
-        {"south": "side|up", "east": "side|up", "power": "8"},
-        {"south": "side|up", "west": "side|up", "power": "8"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "8" },
+        { "north": "side|up", "east": "side|up", "power": "8" },
+        { "north": "side|up", "west": "side|up", "power": "8" },
+        { "south": "side|up", "east": "side|up", "power": "8" },
+        { "south": "side|up", "west": "side|up", "power": "8" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/8" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "9"},
-        {"north": "side|up", "east": "side|up", "power": "9"},
-        {"north": "side|up", "west": "side|up", "power": "9"},
-        {"south": "side|up", "east": "side|up", "power": "9"},
-        {"south": "side|up", "west": "side|up", "power": "9"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "9" },
+        { "north": "side|up", "east": "side|up", "power": "9" },
+        { "north": "side|up", "west": "side|up", "power": "9" },
+        { "south": "side|up", "east": "side|up", "power": "9" },
+        { "south": "side|up", "west": "side|up", "power": "9" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/9" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "10"},
-        {"north": "side|up", "east": "side|up", "power": "10"},
-        {"north": "side|up", "west": "side|up", "power": "10"},
-        {"south": "side|up", "east": "side|up", "power": "10"},
-        {"south": "side|up", "west": "side|up", "power": "10"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "10" },
+        { "north": "side|up", "east": "side|up", "power": "10" },
+        { "north": "side|up", "west": "side|up", "power": "10" },
+        { "south": "side|up", "east": "side|up", "power": "10" },
+        { "south": "side|up", "west": "side|up", "power": "10" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/10" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "11"},
-        {"north": "side|up", "east": "side|up", "power": "11"},
-        {"north": "side|up", "west": "side|up", "power": "11"},
-        {"south": "side|up", "east": "side|up", "power": "11"},
-        {"south": "side|up", "west": "side|up", "power": "11"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "11" },
+        { "north": "side|up", "east": "side|up", "power": "11" },
+        { "north": "side|up", "west": "side|up", "power": "11" },
+        { "south": "side|up", "east": "side|up", "power": "11" },
+        { "south": "side|up", "west": "side|up", "power": "11" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/11" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "12"},
-        {"north": "side|up", "east": "side|up", "power": "12"},
-        {"north": "side|up", "west": "side|up", "power": "12"},
-        {"south": "side|up", "east": "side|up", "power": "12"},
-        {"south": "side|up", "west": "side|up", "power": "12"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "12" },
+        { "north": "side|up", "east": "side|up", "power": "12" },
+        { "north": "side|up", "west": "side|up", "power": "12" },
+        { "south": "side|up", "east": "side|up", "power": "12" },
+        { "south": "side|up", "west": "side|up", "power": "12" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/12" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "13"},
-        {"north": "side|up", "east": "side|up", "power": "13"},
-        {"north": "side|up", "west": "side|up", "power": "13"},
-        {"south": "side|up", "east": "side|up", "power": "13"},
-        {"south": "side|up", "west": "side|up", "power": "13"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "13" },
+        { "north": "side|up", "east": "side|up", "power": "13" },
+        { "north": "side|up", "west": "side|up", "power": "13" },
+        { "south": "side|up", "east": "side|up", "power": "13" },
+        { "south": "side|up", "west": "side|up", "power": "13" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/13" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "14"},
-        {"north": "side|up", "east": "side|up", "power": "14"},
-        {"north": "side|up", "west": "side|up", "power": "14"},
-        {"south": "side|up", "east": "side|up", "power": "14"},
-        {"south": "side|up", "west": "side|up", "power": "14"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "14" },
+        { "north": "side|up", "east": "side|up", "power": "14" },
+        { "north": "side|up", "west": "side|up", "power": "14" },
+        { "south": "side|up", "east": "side|up", "power": "14" },
+        { "south": "side|up", "west": "side|up", "power": "14" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/14" }
     },
     {
       "when": { "OR": [
-        {"north": "none", "south": "none", "west": "none", "east": "none", "power": "15"},
-        {"north": "side|up", "east": "side|up", "power": "15"},
-        {"north": "side|up", "west": "side|up", "power": "15"},
-        {"south": "side|up", "east": "side|up", "power": "15"},
-        {"south": "side|up", "west": "side|up", "power": "15"}
+        { "north": "none", "south": "none", "west": "none", "east": "none", "power": "15" },
+        { "north": "side|up", "east": "side|up", "power": "15" },
+        { "north": "side|up", "west": "side|up", "power": "15" },
+        { "south": "side|up", "east": "side|up", "power": "15" },
+        { "south": "side|up", "west": "side|up", "power": "15" }
       ]},
       "apply": { "model": "block/redstone_dust/flat/dot/15" }
     },
     
     
-    
-    {
+
+   {
       "when": { "OR": [
         { "north": "side|up", "power": "0" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "0" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/0" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/0" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "1" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "1" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/1" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/1" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "2" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "2" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/2" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/2" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "3" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "3" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/3" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/3" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "4" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "4" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/4" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/4" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "5" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "5" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/5" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/5" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "6" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "6" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/6" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/6" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "7" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "7" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/7" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/7" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "8" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "8" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/8" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/8" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "9" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "9" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/9" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/9" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "9" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "9" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/9" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/9" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "10" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "10" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/10" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/10" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "11" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "11" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/11" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/11" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "12" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "12" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/12" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/12" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "13" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "13" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/13" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/13" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "14" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "14" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/14" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/14" }
     },
     {
       "when": { "OR": [
         { "north": "side|up", "power": "15" },
         { "north": "none", "south": "side|up", "west": "none", "east": "none", "power": "15" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/15" }
+      "apply": { "model": "block/redstone_dust/flat/dir/n/15" }
     },
     
     
@@ -290,112 +290,112 @@
         { "south": "side|up", "power": "0" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "0" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/0" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/0" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "1" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "1" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/1" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/1" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "2" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "2" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/2" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/2" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "3" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "3" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/3" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/3" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "4" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "4" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/4" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/4" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "5" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "5" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/5" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/5" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "6" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "6" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/6" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/6" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "7" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "7" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/7" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/7" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "8" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "8" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/8" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/8" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "9" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "9" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/9" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/9" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "10" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "10" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/10" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/10" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "11" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "11" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/11" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/11" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "12" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "12" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/12" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/12" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "13" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "13" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/13" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/13" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "14" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "14" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/14" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/14" }
     },
     {
       "when": { "OR": [
         { "south": "side|up", "power": "15" },
         { "north": "side|up", "south": "none", "west": "none", "east": "none", "power": "15" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/ns/15" }
+      "apply": { "model": "block/redstone_dust/flat/dir/s/15" }
     },
     
     
@@ -405,112 +405,112 @@
         { "west": "side|up", "power": "0" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "0" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/0", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/0", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "1" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "1" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/1", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/1", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "2" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "2" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/2", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/2", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "3" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "3" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/3", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/3", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "4" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "4" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/4", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/4", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "5" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "5" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/5", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/5", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "6" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "6" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/6", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/6", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "7" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "7" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/7", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/7", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "8" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "8" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/8", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/8", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "9" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "9" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/9", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/9", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "10" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "10" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/10", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/10", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "11" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "11" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/11", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/11", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "12" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "12" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/12", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/12", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "13" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "13" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/13", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/13", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "14" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "14" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/14", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/14", "y": 270 }
     },
     {
       "when": { "OR": [
         { "west": "side|up", "power": "15" },
         { "north": "none", "south": "none", "west": "none", "east": "side|up", "power": "15" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/15", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/w/15", "y": 270 }
     },
     
     
@@ -520,123 +520,123 @@
         { "east": "side|up", "power": "0" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "0" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/0", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/0", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "1" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "1" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/1", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/1", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "2" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "2" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/2", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/2", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "3" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "3" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/3", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/3", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "4" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "4" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/4", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/4", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "5" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "5" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/5", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/5", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "5" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "5" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/5", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/5", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "6" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "6" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/6", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/6", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "7" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "7" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/7", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/7", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "8" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "8" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/8", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/8", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "9" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "9" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/9", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/9", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "10" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "10" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/10", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/10", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "11" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "11" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/11", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/11", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "12" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "12" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/12", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/12", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "13" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "13" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/13", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/13", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "14" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "14" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/14", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/14", "y": 270 }
     },
     {
       "when": { "OR": [
         { "east": "side|up", "power": "15" },
         { "north": "none", "south": "none", "west": "side|up", "east": "none", "power": "15" }
       ]},
-      "apply": { "model": "block/redstone_dust/flat/sin/we/15", "y": 270 }
+      "apply": { "model": "block/redstone_dust/flat/dir/e/15", "y": 270 }
     },
-    
-    
-    
+
+
+
     {
       "when": { "north": "up", "power": "0" },
       "apply": { "model": "block/redstone_dust/flat/up/0" }
