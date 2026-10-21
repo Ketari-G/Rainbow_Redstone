@@ -10,12 +10,13 @@ stuff to keep track of:
 - rpo resource expansion (json replacements) are available from 1.17.1+
 - rpo presets are from 1.21.1+
 - see variant ideas
-- shaders 26.3 need #include fix (change from #moj_import to #include)
+- shaders 26.3 need default_colors.glsl to be in separate shaders/include/ folder - made it work with the rest of the shader files
 - dot +x and +z are both +0.13 due to weird texture scaling issue (fixed in 1.21.11 but kept everywehre for simplicity for now)
   - this issue is caused by FaceBakery shrinking every face's UVs slightly towards the centre of the face's UV area (lerp by 4 / atlas size) to stop atlas bleeding
   - I am unsure on why this happens specifically with <16px textures/models and only on +x/+z
 - flat models + all textures done
 - blockstate currently for flat models - may need changing for others? hopefully not tho
 - rpo models folder *not done* - to do after all models finished only
+- somewhere above 1.21 - pack.mcmeta wants pack/min format to be 15 instead of 4 (otherwise displays pack incompatible). technically it works regardless and this doesnt *need* to be fixed, but would be nice if it could be somehow. for now, leaving at 4 to have it working with all the other versions
 - 
 

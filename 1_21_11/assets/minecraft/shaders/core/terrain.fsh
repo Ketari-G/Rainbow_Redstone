@@ -88,7 +88,7 @@ vec4 sampleRGSS(sampler2D source, vec2 uv, vec2 pixelSize) {
 //include respackopts:config_supplier
 //do not remove this comment ^
 
-#moj_import "default_colors.glsl" //imports default color settings variables
+#moj_import <default_colors.glsl> //imports default color settings variables
 
 //1.21.11
 

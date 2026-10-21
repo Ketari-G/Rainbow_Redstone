@@ -18,7 +18,7 @@ out vec4 fragColor;
 //technically, there should be a rpo config include line here, however it has been removed on purpose
 //if not removed, it breaks color customization in versions 1.17 - 1.19.4 due to rpo not having folders / them not working
 
-#moj_import "default_colors.glsl" //imports default color settings variables
+#moj_import <default_colors.glsl> //imports default color settings variables
 
 //1.17 - 1.20.1
 

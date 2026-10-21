@@ -15,7 +15,7 @@ out vec4 fragColor;
 //include respackopts:config_supplier
 //do not remove this comment ^
 
-#moj_import "default_colors.glsl" //imports default color settings variables
+#moj_import <default_colors.glsl> //imports default color settings variables
 
 //1.21.6
 
