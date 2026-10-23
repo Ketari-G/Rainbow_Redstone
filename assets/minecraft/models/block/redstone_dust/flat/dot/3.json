@@ -1,0 +1,17 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "block/redstone_dust/particle",
+        "line": "block/redstone_dust/dot/0123"
+    },
+    "elements": [
+        {   "from": [ 5, 0.25, 5 ],
+            "to": [ 11, 0.25, 11 ],
+            "shade": false,
+            "faces": {
+                "up": { "uv": [ 10, 9, 11, 10 ], "texture": "#line", "tintindex": -1 },
+                "down": { "uv": [ 10, 10, 11, 9 ], "texture": "#line", "tintindex": -1 }
+            }
+        }
+    ]
+}
