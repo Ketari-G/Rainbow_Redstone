@@ -10,7 +10,7 @@
             "shade": false,
             "faces": {
                 "south": { "uv": [ 10, 2, 11, 3 ], "texture": "#line", "tintindex": -1 },
-                "down": { "uv": [ 10, 3, 11, 2 ], "texture": "#line", "tintindex": -1 }
+                "north": { "uv": [ 10, 3, 11, 2 ], "texture": "#line", "tintindex": -1 }
             }
         }
     ]

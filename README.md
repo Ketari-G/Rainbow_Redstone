@@ -16,7 +16,7 @@ stuff to keep track of:
   - I am unsure on why this happens specifically with <16px textures/models and only on +x/+z
 - somewhere above 1.21 - pack.mcmeta wants pack/min format to be 15 instead of 4 (otherwise displays pack incompatible). technically it works regardless and this doesnt *need* to be fixed, but would be nice if it could be somehow. for now, leaving at 4 to have it working with all the other versions
 - slight desire to change default "off-floor" value from 0.25 to ~0.05 (will need testing with isorender)
-- textures done, models done: vanilla, flat, 3d_float (w/out up)
-- blockstate file done - most likely needs adapting for 3d_float
-- rpo models folder *not done* - to do after all models finished only
+- textures done, models done: vanilla, flat, 3d_float (up here is up to change - unsure)
+- blockstate file done - keeping same for everything for now, but can easily be changed with rpo
+- rpo models folder currently copying main folder - potentially to overtake it more or less entirely (no point in storing model variants only available with rpo in the base folder so uuuuh yeah, base folder will probably only end up having the vanilla version)
 - 

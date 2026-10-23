@@ -1,0 +1,21 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "block/redstone_dust/particle",
+        "line": "block/redstone_dust/dot/8901"
+    },
+    "elements": [
+        {   "from": [ 5, 5, 5 ],
+            "to": [ 11, 11, 11 ],
+            "shade": false,
+            "faces": {
+                "up": { "uv": [ 2, 9, 3, 10 ], "texture": "#line", "tintindex": -1 },
+                "down": { "uv": [ 2, 9, 3, 10 ], "texture": "#line", "tintindex": -1 },
+                "north": { "uv": [ 2, 9, 3, 10 ], "texture": "#line", "tintindex": -1 },
+                "south": { "uv": [ 2, 9, 3, 10 ], "texture": "#line", "tintindex": -1 },
+                "west": { "uv": [ 2, 9, 3, 10 ], "texture": "#line", "tintindex": -1 },
+                "east": { "uv": [ 2, 9, 3, 10 ], "texture": "#line", "tintindex": -1 }
+            }
+        }
+    ]
+}

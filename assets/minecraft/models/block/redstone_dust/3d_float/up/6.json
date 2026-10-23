@@ -5,12 +5,16 @@
         "line": "block/redstone_dust/ns/4567"
     },
     "elements": [
-        {   "from": [ 6, 0, 0.25 ],
-            "to": [ 10, 16, 0.25 ],
+        {   "from": [ 6, 10, 0 ],
+            "to": [ 10, 26, 4 ],
             "shade": false,
             "faces": {
+                "up": { "uv": [ 10, 2, 11, 3 ], "texture": "#line", "tintindex": -1 },
+                "down": { "uv": [ 10, 2, 11, 3 ], "texture": "#line", "tintindex": -1 },
+                "north": { "uv": [ 10, 2, 11, 3 ], "texture": "#line", "tintindex": -1 },
                 "south": { "uv": [ 10, 2, 11, 3 ], "texture": "#line", "tintindex": -1 },
-                "down": { "uv": [ 10, 3, 11, 2 ], "texture": "#line", "tintindex": -1 }
+                "west": { "uv": [ 10, 2, 11, 3 ], "texture": "#line", "tintindex": -1 },
+                "east": { "uv": [ 10, 2, 11, 3 ], "texture": "#line", "tintindex": -1 }
             }
         }
     ]
