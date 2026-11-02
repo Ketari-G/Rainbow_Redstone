@@ -1,0 +1,6 @@
+{
+    condition: "false",
+    fallback: [
+      "assets/minecraft/blockstates/rpo_alts/redstone_wire.json"
+    ]
+}
