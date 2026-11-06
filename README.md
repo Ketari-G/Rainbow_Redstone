@@ -18,6 +18,8 @@ stuff to keep track of:
 - slight desire to change default "off-floor" value from 0.25 to ~0.05 (will need testing with isorender)
 - textures done, models done: vanilla, flat, 3d_float, 3d_ground
 - blockstate file done - to change with rpo for 3d_float
-- rpo models folder currently copying main folder - potentially to overtake it more or less entirely (no point in storing model variants only available with rpo in the base folder so uuuuh yeah, base folder will probably only end up having the vanilla version)
-- next task: rpo integration for model switching
+- rpo models folder separate from vanilla, vanilla only has van & num (num to be removed most likely)
+- rpo for models choosing/swapping done (including float3d blockstate)
+- next task: numbers & height from floor fixing
+- p.s. I forgor xd
 - 

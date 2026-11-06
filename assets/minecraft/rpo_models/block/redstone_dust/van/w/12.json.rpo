@@ -1,0 +1,8 @@
+{
+    condition: "dustType.vanilla",
+    fallback: [
+      "assets/minecraft/rpo_models/block/redstone_dust/flat/w/12.json",
+      "assets/minecraft/rpo_models/block/redstone_dust/flat3d/w/12.json",
+      "assets/minecraft/rpo_models/block/redstone_dust/float3d/w/12.json"
+    ]
+}

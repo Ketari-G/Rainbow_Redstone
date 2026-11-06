@@ -86,6 +86,11 @@
                 b: {type: "number", default: 23}
             }
         },
+        nColor: {
+            r: {type: "number", default: 255},
+            g: {type: "number", default: 255},
+            b: {type: "number", default: 255}
+        },
         dustItem: {
             type: "enum",
             default: "rr",
@@ -94,16 +99,11 @@
         dustType: {
             type: "enum",
             default: "vanilla",
-            values: ["vanilla", "wide4", "wide6"]
+            values: ["vanilla", "flat", "flat3d", "float3d"]
         },
         dustHeight: {
             type: "number",
             default: 0.25
-        },
-        nColor: {
-            r: {type: "number", default: 255},
-            g: {type: "number", default: 255},
-            b: {type: "number", default: 255}
         },
          dustNumbers: {
             type: "enum",

@@ -1,0 +1,3 @@
+{
+    condition: "dustType.float3d"
+}

@@ -105,25 +105,26 @@
 	"rpo.rainbowRedstone.rColor.ss15.g": "Green",
 	"rpo.rainbowRedstone.rColor.ss15.b": "Blue",
 
-	"rpo.rainbowRedstone.dustItem": "Redstone dust item type",
-    "rpo.rainbowRedstone.dustItem.rr": "Rainbow",
-    "rpo.rainbowRedstone.dustItem.vanilla": "Vanilla",
-
-    "rpo.rainbowRedstone.dustType": "Redstone dust type:§7 choose shape",
-    "rpo.rainbowRedstone.dustType.vanilla": "Vanilla",
-    "rpo.rainbowRedstone.dustType.wide4": "4 Wide",
-    "rpo.rainbowRedstone.dustType.wide6": "6 Wide",
-
-    "rpo.rainbowRedstone.dustHeight": "Redstone dust height:§7 distance of it from surface it's on",
-    "rpo.tooltip.rainbowRedstone.dustHeight": "Min: [-16], Max: [32]. Recommended range: 0.01 - 0.25",
-    "rpo.rainbowRedstone.dustHeight.tooltip": "Min: [-16], Max: [32]. Recommended range: 0.01 - 0.25",
-
 	"rpo.rainbowRedstone.nColor": "Numbers Color Customization",
 	"rpo.tooltip.rainbowRedstone.nColor": "This feature is only available in vanilla 1.20.2+ and *without* sodium!",
 	"rpo.rainbowRedstone.nColor.tooltip": "This feature is only available in vanilla 1.20.2+ and *without* sodium!",
 	"rpo.rainbowRedstone.nColor.r": "Red (0-255)",
 	"rpo.rainbowRedstone.nColor.g": "Green (0-255)",
 	"rpo.rainbowRedstone.nColor.b": "Blue (0-255)",
+
+	"rpo.rainbowRedstone.dustItem": "Redstone dust item type",
+    "rpo.rainbowRedstone.dustItem.rr": "Rainbow",
+    "rpo.rainbowRedstone.dustItem.vanilla": "Vanilla",
+
+    "rpo.rainbowRedstone.dustType": "Redstone dust type:§7 choose shape",
+    "rpo.rainbowRedstone.dustType.vanilla": "Vanilla",
+    "rpo.rainbowRedstone.dustType.flat": "Flat",
+    "rpo.rainbowRedstone.dustType.flat3d": "Flat 3D",
+    "rpo.rainbowRedstone.dustType.float3d": "Floating 3D",
+
+    "rpo.rainbowRedstone.dustHeight": "Redstone dust height:§7 distance of it from surface it's on",
+    "rpo.tooltip.rainbowRedstone.dustHeight": "Min: [-16], Max: [32]. Recommended range: 0.01 - 0.25",
+    "rpo.rainbowRedstone.dustHeight.tooltip": "Min: [-16], Max: [32]. Recommended range: 0.01 - 0.25",
 
     "rpo.rainbowRedstone.dustNumbers": "Redstone dust numbers:§7 choose type to display on top of dust",
     "rpo.rainbowRedstone.dustNumbers.nonum": "No numbers",
