@@ -1,0 +1,6 @@
+{
+    condition: "true",
+    expansions: {
+      mod: "rainbowRedstone.numHeight"
+    }
+}

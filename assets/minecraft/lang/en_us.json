@@ -122,9 +122,9 @@
     "rpo.rainbowRedstone.dustType.flat3d": "Flat 3D",
     "rpo.rainbowRedstone.dustType.float3d": "Floating 3D",
 
-    "rpo.rainbowRedstone.dustHeight": "Redstone dust height:§7 distance of it from surface it's on",
-    "rpo.tooltip.rainbowRedstone.dustHeight": "Min: [-16], Max: [32]. Recommended range: 0.01 - 0.25",
-    "rpo.rainbowRedstone.dustHeight.tooltip": "Min: [-16], Max: [32]. Recommended range: 0.01 - 0.25",
+    "rpo.rainbowRedstone.dustHeight": "Redstone dust height modifier:§7 vertical displacement of it from default position",
+    "rpo.tooltip.rainbowRedstone.dustHeight": "Breaks if dust goes more than 1 block below or 2 above vanilla",
+    "rpo.rainbowRedstone.dustHeight.tooltip": "Breaks if dust goes more than 1 block below or 2 above vanilla",
 
     "rpo.rainbowRedstone.dustNumbers": "Redstone dust numbers:§7 choose type to display on top of dust",
     "rpo.rainbowRedstone.dustNumbers.nonum": "No numbers",
@@ -132,8 +132,8 @@
     "rpo.rainbowRedstone.dustNumbers.num2": "Rounded-ish",
     "rpo.rainbowRedstone.dustNumbers.num3": "Rectangular",
 
-    "rpo.rainbowRedstone.numHeight": "Number height:§7 distance of it from the redstone dust it's on",
-    "rpo.tooltip.rainbowRedstone.numHeight": "Technically no limit but recommended to keep in the 0.01 - 0.05 range",
-    "rpo.rainbowRedstone.numHeight.tooltip": "Technically no limit but recommended to keep in the 0.01 - 0.05 range"
+    "rpo.rainbowRedstone.numHeight": "Number height:§7 distance of it from the ground the redstone is on",
+    "rpo.tooltip.rainbowRedstone.numHeight": "Min: [-16], Max: [32]. Recommended to put 0.02 px above redstone",
+    "rpo.rainbowRedstone.numHeight.tooltip": "Min: [-16], Max: [32]. Recommended to put 0.02 px above redstone"
 
 }

@@ -1,3 +1,7 @@
 {
-    condition: "dustType.float3d"
+    condition: "dustType.float3d",
+    expansions: {
+      modL: "rainbowRedstone.dustHeight + 5",
+      modH: "rainbowRedstone.dustHeight + 11"
+    }
 }

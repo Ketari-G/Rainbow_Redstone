@@ -103,7 +103,7 @@
         },
         dustHeight: {
             type: "number",
-            default: 0.25
+            default: 0.0
         },
          dustNumbers: {
             type: "enum",
@@ -112,7 +112,7 @@
         },
         numHeight: {
             type: "number",
-            default: 0.05
+            default: 0.04
         }
         
     }

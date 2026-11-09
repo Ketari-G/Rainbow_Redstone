@@ -5,8 +5,8 @@
         "line": "block/redstone_dust/dot/8901"
     },
     "elements": [
-        {   "from": [ 4, 0.25, 4 ],
-            "to": [ 12, 0.25, 12 ],
+        {   "from": [ 4, 0.02, 4 ],
+            "to": [ 12, 0.02, 12 ],
             "shade": false,
             "faces": {
                 "up": { "uv": [ 0, 8, 8, 16 ], "texture": "#line", "tintindex": -1 },

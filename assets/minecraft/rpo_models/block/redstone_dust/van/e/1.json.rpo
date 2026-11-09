@@ -4,5 +4,8 @@
       "assets/minecraft/rpo_models/block/redstone_dust/flat/e/1.json",
       "assets/minecraft/rpo_models/block/redstone_dust/flat3d/e/1.json",
       "assets/minecraft/rpo_models/block/redstone_dust/float3d/e/1.json"
-    ]
+    ],
+    expansions: {
+      mod: "rainbowRedstone.dustHeight + 0.02"
+    }
 }

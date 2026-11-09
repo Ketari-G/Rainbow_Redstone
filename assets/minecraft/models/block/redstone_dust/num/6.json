@@ -5,8 +5,8 @@
         "line": "block/redstone_dust/numbers/nonum"
     },
     "elements": [
-        {   "from": [ 7, 0.30, 6.25 ],
-            "to": [ 9, 0.30, 9.75 ],
+        {   "from": [ 7, 0.04, 6.25 ],
+            "to": [ 9, 0.04, 9.75 ],
             "shade": false,
             "faces": {
                 "up": { "uv": [ 8, 7, 12, 14], "texture": "#line" }

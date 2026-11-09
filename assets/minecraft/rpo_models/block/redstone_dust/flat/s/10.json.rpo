@@ -1,3 +1,6 @@
 {
-    condition: "dustType.flat"
+    condition: "dustType.flat",
+    expansions: {
+      mod: "rainbowRedstone.dustHeight + 0.02"
+    }
 }
