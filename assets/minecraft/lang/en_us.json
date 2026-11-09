@@ -128,9 +128,9 @@
 
     "rpo.rainbowRedstone.dustNumbers": "Redstone dust numbers:§7 choose type to display on top of dust",
     "rpo.rainbowRedstone.dustNumbers.nonum": "No numbers",
-    "rpo.rainbowRedstone.dustNumbers.num1": "Rounded",
-    "rpo.rainbowRedstone.dustNumbers.num2": "Rectangular",
-    "rpo.rainbowRedstone.dustNumbers.num3": "Double",
+    "rpo.rainbowRedstone.dustNumbers.num1": "Rounded Small",
+    "rpo.rainbowRedstone.dustNumbers.num2": "Rounded-ish",
+    "rpo.rainbowRedstone.dustNumbers.num3": "Rectangular",
 
     "rpo.rainbowRedstone.numHeight": "Number height:§7 distance of it from the redstone dust it's on",
     "rpo.tooltip.rainbowRedstone.numHeight": "Technically no limit but recommended to keep in the 0.01 - 0.05 range",
