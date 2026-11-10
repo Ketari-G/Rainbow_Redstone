@@ -21,6 +21,9 @@ stuff to keep track of:
 - rpo models folder separate from vanilla, vanilla only has van & num (num to be removed most likely)
 - rpo for models choosing/swapping done (including float3d blockstate)
 - number types all take up a single 16x16 png, which gets swapped with rpo, and only 16 model files (1/ss)
-- height customization done but differently from previous version: dustHeight is local to default height per model, and numHeight is absolute. I would like to have numHeight be local per model as well, but this may be difficult to implement. also float3d goes up/down fully, instead of the sideways movement of "up" like the others have
-- next step: get some sleep, idk wtf I'm cooking at this point
+- height customization done but differently from previous version: dustHeight *and* numHeight are local to default height per model. also float3d goes up/down fully, instead of the sideways movement of "up" like the others have
+- numbers follow perfect height regardless of what model type is chosen or if the "dot" is higher or not. float3d has an option to turn off the "up" state numbers - altho this technically just moves them down where you cant see them due to size-saving optimizations lol
+- may want to make numbers for floating 3d "up" state be displayed on the side when possible? - complex/hard/long implementation
+- next task: re-organize rpo settings menu
+- next next task: create dust width customization
 - 

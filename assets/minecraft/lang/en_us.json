@@ -123,8 +123,8 @@
     "rpo.rainbowRedstone.dustType.float3d": "Floating 3D",
 
     "rpo.rainbowRedstone.dustHeight": "Redstone dust height modifier:§7 vertical displacement of it from default position",
-    "rpo.tooltip.rainbowRedstone.dustHeight": "Breaks if dust goes more than 1 block below or 2 above vanilla",
-    "rpo.rainbowRedstone.dustHeight.tooltip": "Breaks if dust goes more than 1 block below or 2 above vanilla",
+    "rpo.tooltip.rainbowRedstone.dustHeight": "Breaks if dust goes more than 1 block below or 2 above vanilla dust height",
+    "rpo.rainbowRedstone.dustHeight.tooltip": "Breaks if dust goes more than 1 block below or 2 above vanilla dust height",
 
     "rpo.rainbowRedstone.dustNumbers": "Redstone dust numbers:§7 choose type to display on top of dust",
     "rpo.rainbowRedstone.dustNumbers.nonum": "No numbers",
@@ -132,8 +132,10 @@
     "rpo.rainbowRedstone.dustNumbers.num2": "Rounded-ish",
     "rpo.rainbowRedstone.dustNumbers.num3": "Rectangular",
 
-    "rpo.rainbowRedstone.numHeight": "Number height:§7 distance of it from the ground the redstone is on",
-    "rpo.tooltip.rainbowRedstone.numHeight": "Min: [-16], Max: [32]. Recommended to put 0.02 px above redstone",
-    "rpo.rainbowRedstone.numHeight.tooltip": "Min: [-16], Max: [32]. Recommended to put 0.02 px above redstone"
+    "rpo.rainbowRedstone.numHeight": "Number height modifier:§7 distance of it from the redstone it's on",
+    "rpo.tooltip.rainbowRedstone.numHeight": "Breaks if numbers go more than 1 block below or 2 above vanilla dust height",
+    "rpo.rainbowRedstone.numHeight.tooltip": "Breaks if numbers go more than 1 block below or 2 above vanilla dust height",
+
+    "rpo.rainbowRedstone.upNum": "§7Enable numbers on top of 'up' state of Floating 3D dust type?"
 
 }

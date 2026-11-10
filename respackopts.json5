@@ -112,7 +112,11 @@
         },
         numHeight: {
             type: "number",
-            default: 0.04
+            default: 0.0
+        },
+        upNum: {
+            type: "boolean",
+            default: true
         }
         
     }
