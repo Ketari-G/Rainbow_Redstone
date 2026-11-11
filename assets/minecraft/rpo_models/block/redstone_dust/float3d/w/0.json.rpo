@@ -1,7 +1,9 @@
 {
     condition: "dust.model.float3d",
     expansions: {
-      modL: "rainbowRedstone.dust.height + 6",
-      modH: "rainbowRedstone.dust.height + 10"
+      highL: "rainbowRedstone.dust.height + 8 - rainbowRedstone.dust.width / 2",
+      highH: "rainbowRedstone.dust.height + 8 + rainbowRedstone.dust.width / 2",
+      wide1: "8 - rainbowRedstone.dust.width / 2",
+      wide2: "8 + rainbowRedstone.dust.width / 2"
     }
 }

@@ -1,5 +1,5 @@
 {
     expansions: {
-      mod: "listOf(0.04, 0.04, 2.02, 11.02)[rainbowRedstone.dust.model + 0] + rainbowRedstone.num.height"
+      high: "listOf(0.04, 0.04, 2.02, 11.02)[rainbowRedstone.dust.model + 0] + rainbowRedstone.num.height"
     }
 }

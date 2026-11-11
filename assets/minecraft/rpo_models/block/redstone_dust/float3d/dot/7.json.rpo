@@ -1,7 +1,9 @@
 {
     condition: "dust.model.float3d",
     expansions: {
-      modL: "rainbowRedstone.dust.height + 5",
-      modH: "rainbowRedstone.dust.height + 11"
+      highL: "rainbowRedstone.dust.height + 8 - rainbowRedstone.dust.width / 2 - listOf(1, 0)[rainbowRedstone.dust.dotSize + 0]",
+      highH: "rainbowRedstone.dust.height + 8 + rainbowRedstone.dust.width / 2 + listOf(1, 0)[rainbowRedstone.dust.dotSize + 0]",
+      wide1: "8 - rainbowRedstone.dust.width / 2 - listOf(1, 0)[rainbowRedstone.dust.dotSize + 0]",
+      wide2: "8 + rainbowRedstone.dust.width / 2 + listOf(1, 0)[rainbowRedstone.dust.dotSize + 0]"
     }
 }

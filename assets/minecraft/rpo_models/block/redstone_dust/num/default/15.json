@@ -4,15 +4,15 @@
         "line": "block/redstone_dust/numbers/nonum"
     },
     "elements": [
-        {   "from": [ 5.75, ${mod}, 6.25 ],
-            "to": [ 7.75, ${mod}, 9.75 ],
+        {   "from": [ 5.75, ${high}, 6.25 ],
+            "to": [ 7.75, ${high}, 9.75 ],
             "shade": false,
             "faces": {
                 "up": { "uv": [ 4, 0, 8, 7], "texture": "#line" }
             }
         },
-        {   "from": [ 8, ${mod}, 6.25 ],
-            "to": [ 10, ${mod}, 9.75 ],
+        {   "from": [ 8, ${high}, 6.25 ],
+            "to": [ 10, ${high}, 9.75 ],
             "shade": false,
             "faces": {
                 "up": { "uv": [ 4, 7, 8, 14], "texture": "#line" }

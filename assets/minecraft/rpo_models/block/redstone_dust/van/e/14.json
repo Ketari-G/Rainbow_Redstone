@@ -5,8 +5,8 @@
         "line": "block/redstone_dust/we/2345"
     },
     "elements": [
-        {   "from": [ 6, ${mod}, 8 ],
-            "to": [ 10, ${mod}, 16 ],
+        {   "from": [ 6, ${high}, 8 ],
+            "to": [ 10, ${high}, 16 ],
             "shade": false,
             "faces": {
                 "up": { "uv": [ 8, 8, 12, 16 ], "texture": "#line", "tintindex": -1 },

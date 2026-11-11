@@ -94,6 +94,15 @@
                 default: "vanilla",
                 values: ["vanilla", "flat", "flat3d", "float3d"]
             },
+            width: {
+                type: "number",
+                default: 4.0
+            },
+            dotSize: {
+                type: "enum",
+                default: "bigger",
+                values: ["bigger", "equal"]
+            },
             height: {
                 type: "number",
                 default: 0.0
