@@ -1,0 +1,4 @@
+{
+	condition: "version('minecraft', '<1.20.1')",
+	fallback: "assets/minecraft/shaders/core/rpo_shaders/1_20_2_cutout.fsh"
+}

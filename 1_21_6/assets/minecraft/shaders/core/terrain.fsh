@@ -100,7 +100,7 @@ void main() {
         }
     }
     else if (round(alpha * 100) == n_opacity) {
-        custom = vec4(rainbowRedstone_num_color_r/255.0, rainbowRedstone_num_clor_g/255.0, rainbowRedstone_num_color_b/255.0, 1.0);
+        custom = vec4(rainbowRedstone_num_color_r/255.0, rainbowRedstone_num_color_g/255.0, rainbowRedstone_num_color_b/255.0, 1.0);
     }
 
     vec4 color = texColor * vertexColor * custom;

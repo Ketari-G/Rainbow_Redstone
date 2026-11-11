@@ -25,5 +25,6 @@ stuff to keep track of:
 - numbers follow perfect height regardless of what model type is chosen or if the "dot" is higher or not. float3d has an option to turn off the "up" state numbers - altho this technically just moves them down where you cant see them due to size-saving optimizations lol
 - may want to make numbers for floating 3d "up" state be displayed on the side when possible? - complex/hard/long implementation
 - dust width/size customization done, potential idea to make numbers size customizeable as well but I dont think its worth it
-- 
+- 1.20.1 now properly works with color customization thanks to rpo *(make sure that the fallback can always be identified - otherwise the whole thing breaks)*
+- pretty sure RR 2.0.0 is now fully finished and tested but I need to go over it tmr again just in case before publishing
 - 
