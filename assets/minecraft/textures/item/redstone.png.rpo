@@ -1,5 +1,5 @@
 {
-    condition: "dustItem.rr",
+    condition: "dust.item.rr",
     fallback: [
         "assets/minecraft/textures/item/rpo_alts/vanilla_redstone.png"
     ]

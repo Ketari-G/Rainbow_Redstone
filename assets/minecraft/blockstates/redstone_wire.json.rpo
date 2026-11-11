@@ -1,5 +1,5 @@
 {
-    condition: "dustType.vanilla | dustType.flat | dustType.flat3d",
+    condition: "dust.model.vanilla | dust.model.flat | dust.model.flat3d",
     fallback: [
       "assets/minecraft/blockstates/rpo_alts/redwire_float3d.json"
     ]

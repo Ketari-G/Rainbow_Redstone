@@ -1,5 +1,5 @@
 {
-    condition: "rainbowRedstone.upNum",
+    condition: "rainbowRedstone.num.up",
     fallback: "assets/minecraft/rpo_models/block/redstone_dust/num/default/15.json",
-    expansions: { mod: "26.02 + rainbowRedstone.numHeight" }
+    expansions: { mod: "26.02 + rainbowRedstone.num.height" }
 }
