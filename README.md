@@ -25,5 +25,6 @@ stuff to keep track of:
 - may want to make numbers for floating 3d "up" state be displayed on the side when possible? - complex/hard/long implementation
 - dust width/size customization done, potential idea to make numbers size customizeable as well but I dont think its worth it
 - 1.20.1 now properly works with color customization thanks to rpo *(make sure that the fallback can always be identified - otherwise the whole thing breaks)*
+- shaders get disabled by rpo when sodium is present to remove the warning message of sodium not supporting the pack
 - RR 2.0.0 is now fully finished
 - 

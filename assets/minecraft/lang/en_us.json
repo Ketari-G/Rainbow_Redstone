@@ -6,7 +6,7 @@
     "rpo.rainbowRedstone.dust": "Redstone dust settings",
 
 	"rpo.rainbowRedstone.dust.color": "Redstone Dust Color Customization",
-	"rpo.rainbowRedstone.dust.color.tooltip": "This feature is only available in vanilla 1.20.2+ and *without* sodium!",
+	"rpo.rainbowRedstone.dust.color.tooltip": "This feature is only available in vanilla 1.20.1+ and *without* sodium!",
 
 	"rpo.rainbowRedstone.dust.color.ss0": "Signal Strength 0",
 	"rpo.rainbowRedstone.dust.color.ss0.tooltip": "Values have a min of 0 and a max of 255",
@@ -112,7 +112,7 @@
 	"rpo.rainbowRedstone.num": "Numbers on dust settings",
 
 	"rpo.rainbowRedstone.num.color": "Numbers Color Customization",
-	"rpo.rainbowRedstone.num.color.tooltip": "This feature is only available in vanilla 1.20.2+ and *without* sodium!",
+	"rpo.rainbowRedstone.num.color.tooltip": "This feature is only available in vanilla 1.20.1+ and *without* sodium!",
 	"rpo.rainbowRedstone.num.color.r": "Red (0-255)",
 	"rpo.rainbowRedstone.num.color.g": "Green (0-255)",
 	"rpo.rainbowRedstone.num.color.b": "Blue (0-255)",
