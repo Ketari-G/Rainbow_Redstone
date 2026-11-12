@@ -1,3 +1,0 @@
-{
-	condition: "version('minecraft', '>=1.21.9')"
-}

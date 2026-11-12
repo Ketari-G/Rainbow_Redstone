@@ -1,4 +1,0 @@
-{
-	condition: "version('minecraft', '<1.21.9')",
-	fallback: "assets/pack15.mcmeta"
-}
