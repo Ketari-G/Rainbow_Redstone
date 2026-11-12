@@ -965,160 +965,240 @@
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "0" },
-        { "north": "side", "east": "side", "power": "0" },
-        { "north": "side", "west": "side", "power": "0" },
-        { "south": "side", "east": "side", "power": "0" },
-        { "south": "side", "west": "side", "power": "0" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "0" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "0" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "0" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "0" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "0" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "0" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "0" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "0" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "0" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/0" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "1" },
-        { "north": "side", "east": "side", "power": "1" },
-        { "north": "side", "west": "side", "power": "1" },
-        { "south": "side", "east": "side", "power": "1" },
-        { "south": "side", "west": "side", "power": "1" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "1" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "1" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "1" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "1" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "1" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "1" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "1" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "1" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "1" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/1" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "2" },
-        { "north": "side", "east": "side", "power": "2" },
-        { "north": "side", "west": "side", "power": "2" },
-        { "south": "side", "east": "side", "power": "2" },
-        { "south": "side", "west": "side", "power": "2" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "2" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "2" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "2" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "2" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "2" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "2" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "2" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "2" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "2" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/2" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "3" },
-        { "north": "side", "east": "side", "power": "3" },
-        { "north": "side", "west": "side", "power": "3" },
-        { "south": "side", "east": "side", "power": "3" },
-        { "south": "side", "west": "side", "power": "3" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "3" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "3" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "3" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "3" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "3" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "3" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "3" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "3" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "3" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/3" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "4" },
-        { "north": "side", "east": "side", "power": "4" },
-        { "north": "side", "west": "side", "power": "4" },
-        { "south": "side", "east": "side", "power": "4" },
-        { "south": "side", "west": "side", "power": "4" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "4" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "4" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "4" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "4" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "4" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "4" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "4" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "4" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "4" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/4" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "5" },
-        { "north": "side", "east": "side", "power": "5" },
-        { "north": "side", "west": "side", "power": "5" },
-        { "south": "side", "east": "side", "power": "5" },
-        { "south": "side", "west": "side", "power": "5" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "5" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "5" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "5" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "5" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "5" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "5" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "5" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "5" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "5" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/5" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "6" },
-        { "north": "side", "east": "side", "power": "6" },
-        { "north": "side", "west": "side", "power": "6" },
-        { "south": "side", "east": "side", "power": "6" },
-        { "south": "side", "west": "side", "power": "6" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "6" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "6" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "6" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "6" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "6" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "6" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "6" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "6" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "6" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/6" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "7" },
-        { "north": "side", "east": "side", "power": "7" },
-        { "north": "side", "west": "side", "power": "7" },
-        { "south": "side", "east": "side", "power": "7" },
-        { "south": "side", "west": "side", "power": "7" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "7" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "7" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "7" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "7" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "7" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "7" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "7" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "7" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "7" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/7" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "8" },
-        { "north": "side", "east": "side", "power": "8" },
-        { "north": "side", "west": "side", "power": "8" },
-        { "south": "side", "east": "side", "power": "8" },
-        { "south": "side", "west": "side", "power": "8" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "8" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "8" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "8" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "8" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "8" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "8" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "8" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "8" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "8" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/8" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "9" },
-        { "north": "side", "east": "side", "power": "9" },
-        { "north": "side", "west": "side", "power": "9" },
-        { "south": "side", "east": "side", "power": "9" },
-        { "south": "side", "west": "side", "power": "9" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "9" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "9" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "9" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "9" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "9" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "9" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "9" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "9" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "9" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/9" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "10" },
-        { "north": "side", "east": "side", "power": "10" },
-        { "north": "side", "west": "side", "power": "10" },
-        { "south": "side", "east": "side", "power": "10" },
-        { "south": "side", "west": "side", "power": "10" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "10" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "10" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "10" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "10" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "10" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "10" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "10" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "10" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "10" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/10" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "11" },
-        { "north": "side", "east": "side", "power": "11" },
-        { "north": "side", "west": "side", "power": "11" },
-        { "south": "side", "east": "side", "power": "11" },
-        { "south": "side", "west": "side", "power": "11" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "11" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "11" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "11" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "11" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "11" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "11" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "11" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "11" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "11" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/11" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "12" },
-        { "north": "side", "east": "side", "power": "12" },
-        { "north": "side", "west": "side", "power": "12" },
-        { "south": "side", "east": "side", "power": "12" },
-        { "south": "side", "west": "side", "power": "12" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "12" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "12" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "12" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "12" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "12" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "12" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "12" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "12" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "12" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/12" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "13" },
-        { "north": "side", "east": "side", "power": "13" },
-        { "north": "side", "west": "side", "power": "13" },
-        { "south": "side", "east": "side", "power": "13" },
-        { "south": "side", "west": "side", "power": "13" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "13" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "13" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "13" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "13" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "13" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "13" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "13" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "13" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "13" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/13" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "14" },
-        { "north": "side", "east": "side", "power": "14" },
-        { "north": "side", "west": "side", "power": "14" },
-        { "south": "side", "east": "side", "power": "14" },
-        { "south": "side", "west": "side", "power": "14" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "14" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "14" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "14" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "14" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "14" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "14" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "14" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "14" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "14" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/14" }
     },
     {
       "when": { "OR": [
         { "north": "none", "south": "none", "west": "none", "east": "none", "power": "15" },
-        { "north": "side", "east": "side", "power": "15" },
-        { "north": "side", "west": "side", "power": "15" },
-        { "south": "side", "east": "side", "power": "15" },
-        { "south": "side", "west": "side", "power": "15" }
+        { "north": "side", "south": "none", "west": "none", "east": "side", "power": "15" },
+        { "north": "side", "south": "none", "west": "side", "east": "none", "power": "15" },
+        { "north": "none", "south": "side", "west": "none", "east": "side", "power": "15" },
+        { "north": "none", "south": "side", "west": "side", "east": "none", "power": "15" },
+        { "north": "side", "south": "side", "west": "side", "east": "none", "power": "15" },
+        { "north": "side", "south": "side", "west": "none", "east": "side", "power": "15" },
+        { "north": "side", "south": "none", "west": "side", "east": "side", "power": "15" },
+        { "north": "none", "south": "side", "west": "side", "east": "side", "power": "15" },
+        { "north": "side", "south": "side", "west": "side", "east": "side", "power": "15" }
       ]},
       "apply": { "model": "block/redstone_dust/num/raised/15" }
     },
