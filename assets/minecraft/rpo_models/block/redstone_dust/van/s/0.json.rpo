@@ -1,0 +1,11 @@
+{
+    condition: "dust.model.vanilla",
+    fallback: [
+      "assets/minecraft/rpo_models/block/redstone_dust/flat/s/0.json",
+      "assets/minecraft/rpo_models/block/redstone_dust/flat3d/s/0.json",
+      "assets/minecraft/rpo_models/block/redstone_dust/float3d/s/0.json"
+    ],
+    expansions: {
+      high: "rainbowRedstone.dust.height + 0.02"
+    }
+}

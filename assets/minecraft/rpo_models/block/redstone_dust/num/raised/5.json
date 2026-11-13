@@ -1,0 +1,15 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "line": "block/redstone_dust/numbers/nonum"
+    },
+    "elements": [
+        {   "from": [ 7, ${high}, 6.25 ],
+            "to": [ 9, ${high}, 9.75 ],
+            "shade": false,
+            "faces": {
+                "up": { "uv": [ 4, 7, 8, 14], "texture": "#line" }
+            }
+        }
+    ]
+}
