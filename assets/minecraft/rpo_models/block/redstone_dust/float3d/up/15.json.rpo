@@ -1,13 +1,13 @@
 {
     condition: "dust.model.float3d",
     expansions: {
-      highLu: "rainbowRedstone.dust.height + 8 + rainbowRedstone.dust.width / 2",
-      highHu: "rainbowRedstone.dust.height + 24 + rainbowRedstone.dust.width / 2",
-      highLs: "rainbowRedstone.dust.height + 24 - rainbowRedstone.dust.width / 2 + 0.02",
-      highHs: "rainbowRedstone.dust.height + 24 + rainbowRedstone.dust.width / 2 - 0.02",
-      wide1: "8 - rainbowRedstone.dust.width / 2",
-      wide2: "8 + rainbowRedstone.dust.width / 2",
-      wide3: "8 - rainbowRedstone.dust.width / 2 + 0.02",
-      wide4: "8 + rainbowRedstone.dust.width / 2 - 0.02"
+      highLu: "dust.height + 8 + dust.width / 2",
+      highHu: "dust.height + 24 + dust.width / 2",
+      highLs: "dust.height + 24 - dust.width / 2 + 0.02",
+      highHs: "dust.height + 24 + dust.width / 2 - 0.02",
+      wide1: "8 - dust.width / 2",
+      wide2: "8 + dust.width / 2",
+      wide3: "8 - dust.width / 2 + 0.02",
+      wide4: "8 + dust.width / 2 - 0.02"
     }
 }

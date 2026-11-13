@@ -1,5 +1,7 @@
 {
+    condition: "!num.model.nonum",
+    fallback: "assets/minecraft/rpo_models/block/redstone_dust/none.json",
     expansions: {
-      high: "listOf(0.04, 0.04, 1.02 + listOf(1, 0)[rainbowRedstone.dust.dotSize + 0], 8.02 + rainbowRedstone.dust.width / 2 + listOf(1, 0)[rainbowRedstone.dust.dotSize + 0])[rainbowRedstone.dust.model + 0] + rainbowRedstone.dust.height + rainbowRedstone.num.height"
+      high: "listOf(0.04, 0.04, 1.02 + listOf(1, 0)[dust.dotSize + 0], 8.02 + dust.width / 2 + listOf(1, 0)[dust.dotSize + 0])[dust.model + 0] + dust.height + num.height"
     }
 }

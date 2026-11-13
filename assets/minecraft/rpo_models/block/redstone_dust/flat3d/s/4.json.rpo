@@ -1,9 +1,9 @@
 {
     condition: "dust.model.flat3d",
     expansions: {
-      highL: "rainbowRedstone.dust.height",
-      highH: "rainbowRedstone.dust.height + 1",
-      wide1: "8 - rainbowRedstone.dust.width / 2",
-      wide2: "8 + rainbowRedstone.dust.width / 2"
+      highL: "dust.height",
+      highH: "dust.height + 1",
+      wide1: "8 - dust.width / 2",
+      wide2: "8 + dust.width / 2"
     }
 }

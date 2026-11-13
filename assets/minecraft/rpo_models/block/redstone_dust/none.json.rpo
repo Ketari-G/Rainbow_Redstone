@@ -1,0 +1,3 @@
+{
+    condition: "!num.up | num.model.nonum"
+}

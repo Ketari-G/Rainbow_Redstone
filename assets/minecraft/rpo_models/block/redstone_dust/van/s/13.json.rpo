@@ -6,6 +6,6 @@
       "assets/minecraft/rpo_models/block/redstone_dust/float3d/s/13.json"
     ],
     expansions: {
-      high: "rainbowRedstone.dust.height + 0.02"
+      high: "dust.height + 0.02"
     }
 }

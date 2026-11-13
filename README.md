@@ -6,7 +6,6 @@ This repo is mainly used for me to keep track of things and branches and file hi
 ---
 
 ### To be done:
-- v2.0.1 - fix numbers being higher than dust and causing missing model textures
 - sodium color customization
 - shaded toggle
 - presets

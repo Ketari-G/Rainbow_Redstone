@@ -1,6 +1,7 @@
 {
     "ambientocclusion": false,
     "textures": {
+        "particle": "block/redstone_dust/numbers/nonum",
         "line": "block/redstone_dust/numbers/nonum"
     },
     "elements": [
