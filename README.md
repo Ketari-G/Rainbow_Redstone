@@ -6,10 +6,9 @@ This repo is mainly used for me to keep track of things and branches and file hi
 ---
 
 ### To be done:
-- v1.1.0
-    - add shapes (textures): flat 16x16 square, 4x4 and 6x6 with shaded sides
-    - add models: 16x16x16 cube, 3d wires, etc
-    - make models use existing textures for size savings™
+- v2.0.1 - fix numbers being higher than dust and causing missing model textures
+- sodium color customization
+- shaded toggle
 - presets
 - other redstone components
 
@@ -18,108 +17,156 @@ This repo is mainly used for me to keep track of things and branches and file hi
 - stained glass 2/3 dots alpha = 0.61
 - stained glass outline alpha = 0.64
 - redstone dust alpha = 0.99 for sodium compat. signal strengh detection works by checking for every individual red value of the texture. its not an "optimal" solution, but its the simplest as of right now
+- numbers alpha = 0.98 same reason, but havnt found a good way to separate it further
 
 ### Random stuff to keep track of version wise:
-- 1.13 - 1.15: redstone_wire.json blockstate needs to declare "line" redstone for any side to use the respective line model for both opposite cardinal directions *(n-s/w-e)*, otherwise dust displays wrong *(cut in half)* due to "illegal" states being legal back then *(single dir line)*. 1.16+ works fine with same file, with a caveat that illegal states are no longer visually displayed as illegal *(which vanilla does do)*. may need changing/re-writing? *(for specific models requiring the ability to take up only half the block they're on, like floating 3D)*
+- 1.13 - 1.15: redstone_wire.json blockstate needs to declare "line" redstone for any side to use the respective line model for both opposite cardinal directions *(n-s/w-e)*, otherwise dust displays wrong *(cut in half)* due to "illegal" states being legal back then *(single dir line)*. 1.16+ works fine with same file, with a caveat that illegal states are no longer visually displayed as illegal *(which vanilla does do)*. has been rewritten properly and no longer needs changing
 - <1.17: no core shaders
 - 1.17 - 1.20.1: rendertype_cutout.fsh core shaders used
+- 1.20.1: rpo'd functional shader file
 - 1.20.2 - 1.21.1: rendertype_cutout.fsh used but changed with overlay due to <1.20 rpo folders being broken
 - 1.21.2 - 1.21.5: terrain.fsh used instead
 - 1.21.6 - 1.21.10: changes to terrain.fsh
+- 1.21.9+ - pack.mcmeta wants pack/min format to be 15 instead of 4 (otherwise displays pack incompatible), which is exactly what I let it have. versions <1.20 now display "made for newer version of mc" but I'd rather have that lol
 - 1.21.11+: wtf even happened to the rendering in this version but its okay cuz I fixed it, uses **very** diff terrain.fsh. gaps between pixels may need proper fixing?
+- 26.3: also needs diff shader file AND requires default_colors.glsl to be in include/ - works with an update to the rest
 
 ### Random stuff to keep track of rpo wise:
 - respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13). not using strings tho so idk, for future I guess?
 - 1.20+: rpo color customization officially available (rpo pack v9) due to folder support not working properly <1.20
 - somewhere <1.20 (?): integer in respackopts.json5 are not supported?? use number instead
 - idefk whats happening with this shit <1.20 like, rpo support is only 1.20.1+ (rpo v12)
+- v12 doesnt have support for outside muscripts, using in-line `lineOf(x, y)[packId.entry + 0]`
+- rpo presets are from 1.21.1+
 
 ---
 
 <details>
-  <summary>Resource pack structure (v1.0.0)</summary>
+  <summary>Resource pack structure (v2.0.0)</summary>
   
 ```
 └── Rainbow_Redstone/
-    ├── 1_20_2/ (+)
-    │   └── rendertype_cutout.fsh
-    ├── 1_21_2/ (+)
-    │   └── terrain.fsh
-    ├── 1_21_6/ (+)
-    │   └── terrain.fsh
-    ├── 1_21_11/ (+)
-    │   └── terrain.fsh
+    ├── 1_20_2/ - rpo files here disable the shader if sodium is present
+    │   ├── rendertype_cutout.fsh
+    │   └── rendertype_cutout.fsh.rpo
+    ├── 1_21_2/
+    │   ├── terrain.fsh
+    │   └── terrain.fsh.rpo
+    ├── 1_21_6/
+    │   ├── terrain.fsh
+    │   └── terrain.fsh.rpo
+    ├── 1_21_11/
+    │   ├── terrain.fsh
+    │   └── terrain.fsh.rpo
+    ├── 26_3/
+    │   ├── terrain.fsh
+    │   └── terrain.fsh.rpo
     ├── assets/
-    │   ├── minecraft/
-    │   │   ├── blockstates/
-    │   │   │   └── redstone_wire.json (single base blockstate file, dont need more rn (!))
-    │   │   ├── models/
-    │   │   │   ├── .rpo (toggles between normal and height-controlled)
-    │   │   │   └── block/
-    │   │   │       └── redstone_dust/
-    │   │   │           ├── dot/
-    │   │   │           ├── side/
-    │   │   │           │   └── base.json (customized by side0 and side1)
-    │   │   │           ├── side0/
-    │   │   │           ├── side1/
-    │   │   │           ├── side_alt/
-    │   │   │           │   └── base.json (customized by side_alt0 and side_alt1)
-    │   │   │           ├── side_alt1/
-    │   │   │           ├── side_alt0/
-    │   │   │           ├── up/ (might need changing in the future)
-    │   │   │           └── numbers/ (separate to make it easier to organize)
-    │   │   ├── rpo_models/ (height customization lol with .rpo files)
-    │   │   │   └── block/
-    │   │   │       └── redstone_dust/
-    │   │   │           ├── dot/
-    │   │   │           ├── side/
-    │   │   │           │   ├── base.json
-    │   │   │           │   └── base.json.rpo
-    │   │   │           ├── side0/
-    │   │   │           ├── side1/
-    │   │   │           ├── side_alt/
-    │   │   │           │   ├── base.json
-    │   │   │           │   └── base.json.rpo
-    │   │   │           ├── side_alt1/
-    │   │   │           ├── side_alt0/
-    │   │   │           ├── up/
-    │   │   │           └── numbers/
-    │   │   ├── shaders/
-    │   │   │   └── core/
-    │   │   │       ├── default_colors.glsl (default colors file that can be manually changed)
-    │   │   │       └── rendertype_cutout.fsh (default 1.17+ shaders)
-    │   │   └── textures/
-    │   │       ├── item/
-    │   │       │   ├── redstone.png
-    │   │       │   ├── redstone.png.rpo
-    │   │       │   └── rpo_alts/ (here to be able to add more variants)
-    │   │       │       ├── vanilla_redstone.png
-    │   │       │       └── vanilla_redstone.png.rpo
-    │   │       └── block/
-    │   │           └── redstone_dust/
-    │   │               ├── particle.png
-    │   │               ├── dot/ (easier organization)
-    │   │               │   ├── vanilla/
-    │   │               │   ├── 4_wide/
-    │   │               │   └── 6_wide/
-    │   │               ├── line0/
-    │   │               │   ├── vanilla/
-    │   │               │   ├── 4_wide/
-    │   │               │   └── 6_wide/
-    │   │               ├── line1/
-    │   │               │   ├── vanilla/
-    │   │               │   ├── 4_wide/
-    │   │               │   └── 6_wide/
-    │   │               └── numbers/
-    │   │                   ├── nonum/
-    │   │                   ├── num1/
-    │   │                   ├── num2/
-    │   │                   └── num3/
-    │   └── respackopts/ (needed for older rpo ver I think? might be redundant in 1.20+)
-    │       └── conf.json5
+    │   └── minecraft/
+    │       ├── blockstates/
+    │       │   ├── redstone_wire.json
+    │       │   ├── redstone_wire.json.rpo
+    │       │   └── rpo_alts/
+    │       │       ├── redwire_float3d.json - only used specifically for Floating 3D due to different "up"
+    │       │       └── redwire_float3d.json.rpo
+    │       ├── lang/
+    │       │   └── en_us.json
+    │       ├── models/
+    │       │   ├── .rpo - if rpo is present, use rpo_models/ instead of this folder
+    │       │   └── block/
+    │       │       └── redstone_dust/
+    │       │           ├── van/ - none of the other variants required here thankfully
+    │       │           │   ├── dot/
+    │       │           │   ├── e/
+    │       │           │   ├── n/
+    │       │           │   ├── up/
+    │       │           │   ├── w/
+    │       │           │   └── s/
+    │       │           └── num/ - everything required here due to them being directly in the blockstate file, which cant point to anything outside of models/
+    │       │               ├── default/
+    │       │               ├── up/
+    │       │               └── raised/
+    │       ├── rpo_models/
+    │       │   └── block/
+    │       │       └── redstone_dust/
+    │       │           ├── van/ - includes both jsons and their rpo files
+    │       │           │   ├── dot/
+    │       │           │   ├── e/
+    │       │           │   ├── n/
+    │       │           │   ├── s/
+    │       │           │   ├── up/
+    │       │           │   └── w/
+    │       │           ├── flat/ - includes both jsons and their rpo files
+    │       │           │   ├── dot/
+    │       │           │   ├── e/
+    │       │           │   ├── n/
+    │       │           │   ├── s/
+    │       │           │   ├── up/
+    │       │           │   └── w/
+    │       │           ├── float3d/ - includes both jsons and their rpo files
+    │       │           │   ├── dot/
+    │       │           │   ├── e/
+    │       │           │   ├── n/
+    │       │           │   ├── s/
+    │       │           │   ├── up/
+    │       │           │   └── w/
+    │       │           ├── flat3d/ - includes both jsons and their rpo files
+    │       │           │   ├── dot/
+    │       │           │   ├── e/
+    │       │           │   ├── n/
+    │       │           │   ├── s/
+    │       │           │   ├── up/
+    │       │           │   └── w/
+    │       │           └── num/ - includes both jsons and their rpo files
+    │       │               ├── default/
+    │       │               ├── raised/
+    │       │               └── up/
+    │       ├── shaders/
+    │       │   ├── core/
+    │       │   │   ├── rendertype_cutout.fsh
+    │       │   │   ├── rendertype_cutout.fsh.rpo
+    │       │   │   └── rpo_shaders/ - rpo's used here for 1.20.1 color customization, since overlays are only 1.20.2+
+    │       │   │       ├── 1_20_2_cutout.fsh
+    │       │   │       └── 1_20_2_cutout.fsh.rpo
+    │       │   └── include/ - moved to here for 26.3 compat
+    │       │       └── default_colors.glsl
+    │       └── textures/
+    │           ├── item/
+    │           │   ├── redstone.png
+    │           │   ├── redstone.png.rpo
+    │           │   └── rpo_alts/ - simple switch from rr dust item to vanilla in case anyone wants that?? also opens the route for other alts
+    │           │       ├── vanilla_redstone.png
+    │           │       └── vanilla_redstone.png.rpo
+    │           └── block/
+    │               └── redstone_dust/
+    │                   ├── particle.png - particle used for all dust models
+    │                   ├── dot/ - merged 4 textures into one png
+    │                   │   ├── 0123.png
+    │                   │   ├── 4567.png
+    │                   │   ├── 8901.png
+    │                   │   └── 2345.png
+    │                   ├── ns/ - merged 4 textures into one png
+    │                   │   ├── 0123.png
+    │                   │   ├── 4567.png
+    │                   │   ├── 8901.png
+    │                   │   └── 2345.png
+    │                   ├── numbers/ - unlike dust type model switching, which is done at model level, nums are switched here thanks to only needing a single png per type
+    │                   │   ├── nonum.png    └─ every number is 4x7 pixels exactly, 6 = 9,  and 8 is cut in half lol. 10+ is made up of the others combined
+    │                   │   ├── nonum.png.rpo
+    │                   │   ├── num1.png
+    │                   │   ├── num1.png.rpo
+    │                   │   ├── num2.png
+    │                   │   ├── num2.png.rpo
+    │                   │   ├── num3.png
+    │                   │   └── num3.png.rpo
+    │                   └── we/ - merged 4 textures into one png
+    │                       ├── 0123.png
+    │                       ├── 4567.png
+    │                       ├── 8901.png
+    │                       └── 2345.png
     ├── pack.mcmeta
     ├── pack.png
-    └── respackopts.json5
+    └── respackopts.json5 - only a single rpo settings file here cuz v12 now, other one is not needed
 ```
 
 </details>
