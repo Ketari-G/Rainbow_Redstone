@@ -1,146 +1,30 @@
-# Rainbow Redstone
+### v2 rewrite branch
 
-This is a fully vanilla compatible resource pack for **any** version 1.13 and above, that makes the redstone dust rainbow (meaning you don't need *any* mods to use this!). 
-This repo is mainly used for me to keep track of things and branches and file history and wtv else idk lol
+To be merged/used instead of main in the future
 
----
+Main feature: merging all textures together as compactly as possible, making use of individual pixels in the "default" texture as the texture for [x] wide models and so on. Use model files instead of textures for rpo customization, potentially with json text replacement instead of file splitting
 
-### To be done:
-- v1.1.0
-    - add shapes (textures): flat 16x16 square, 4x4 and 6x6 with shaded sides
-    - add models: 16x16x16 cube, 3d wires, etc
-    - make models use existing textures for size savings™
-- presets
-- other redstone components
+**License: same as main branch**
 
-### Random stuff to keep track of color wise:
-- transparent stuff in-game gets affected by alpha customization in versions 1.21+ (didnt actually test but def not <=1.20.2)
-- stained glass 2/3 dots alpha = 0.61
-- stained glass outline alpha = 0.64
-- redstone dust alpha = 0.99 for sodium compat. signal strengh detection works by checking for every individual red value of the texture. its not an "optimal" solution, but its the simplest as of right now
-
-### Random stuff to keep track of version wise:
-- 1.13 - 1.15: redstone_wire.json blockstate needs to declare "line" redstone for any side to use the respective line model for both opposite cardinal directions *(n-s/w-e)*, otherwise dust displays wrong *(cut in half)* due to "illegal" states being legal back then *(single dir line)*. 1.16+ works fine with same file, with a caveat that illegal states are no longer visually displayed as illegal *(which vanilla does do)*. may need changing/re-writing? *(for specific models requiring the ability to take up only half the block they're on, like floating 3D)*
-- <1.17: no core shaders
-- 1.17 - 1.20.1: rendertype_cutout.fsh core shaders used
-- 1.20.2 - 1.21.1: rendertype_cutout.fsh used but changed with overlay due to <1.20 rpo folders being broken
-- 1.21.2 - 1.21.5: terrain.fsh used instead
-- 1.21.6 - 1.21.10: changes to terrain.fsh
-- 1.21.11+: wtf even happened to the rendering in this version but its okay cuz I fixed it, uses **very** diff terrain.fsh. gaps between pixels may need proper fixing?
-
-### Random stuff to keep track of rpo wise:
-- respackopts <1.21 doesnt have string support, only for 1.21+ (corresponds to rpo v13). not using strings tho so idk, for future I guess?
-- 1.20+: rpo color customization officially available (rpo pack v9) due to folder support not working properly <1.20
-- somewhere <1.20 (?): integer in respackopts.json5 are not supported?? use number instead
-- idefk whats happening with this shit <1.20 like, rpo support is only 1.20.1+ (rpo v12)
-
----
-
-<details>
-  <summary>Resource pack structure (v1.0.0)</summary>
-  
-```
-└── Rainbow_Redstone/
-    ├── 1_20_2/ (+)
-    │   └── rendertype_cutout.fsh
-    ├── 1_21_2/ (+)
-    │   └── terrain.fsh
-    ├── 1_21_6/ (+)
-    │   └── terrain.fsh
-    ├── 1_21_11/ (+)
-    │   └── terrain.fsh
-    ├── assets/
-    │   ├── minecraft/
-    │   │   ├── blockstates/
-    │   │   │   └── redstone_wire.json (single base blockstate file, dont need more rn (!))
-    │   │   ├── models/
-    │   │   │   ├── .rpo (toggles between normal and height-controlled)
-    │   │   │   └── block/
-    │   │   │       └── redstone_dust/
-    │   │   │           ├── dot/
-    │   │   │           ├── side/
-    │   │   │           │   └── base.json (customized by side0 and side1)
-    │   │   │           ├── side0/
-    │   │   │           ├── side1/
-    │   │   │           ├── side_alt/
-    │   │   │           │   └── base.json (customized by side_alt0 and side_alt1)
-    │   │   │           ├── side_alt1/
-    │   │   │           ├── side_alt0/
-    │   │   │           ├── up/ (might need changing in the future)
-    │   │   │           └── numbers/ (separate to make it easier to organize)
-    │   │   ├── rpo_models/ (height customization lol with .rpo files)
-    │   │   │   └── block/
-    │   │   │       └── redstone_dust/
-    │   │   │           ├── dot/
-    │   │   │           ├── side/
-    │   │   │           │   ├── base.json
-    │   │   │           │   └── base.json.rpo
-    │   │   │           ├── side0/
-    │   │   │           ├── side1/
-    │   │   │           ├── side_alt/
-    │   │   │           │   ├── base.json
-    │   │   │           │   └── base.json.rpo
-    │   │   │           ├── side_alt1/
-    │   │   │           ├── side_alt0/
-    │   │   │           ├── up/
-    │   │   │           └── numbers/
-    │   │   ├── shaders/
-    │   │   │   └── core/
-    │   │   │       ├── default_colors.glsl (default colors file that can be manually changed)
-    │   │   │       └── rendertype_cutout.fsh (default 1.17+ shaders)
-    │   │   └── textures/
-    │   │       ├── item/
-    │   │       │   ├── redstone.png
-    │   │       │   ├── redstone.png.rpo
-    │   │       │   └── rpo_alts/ (here to be able to add more variants)
-    │   │       │       ├── vanilla_redstone.png
-    │   │       │       └── vanilla_redstone.png.rpo
-    │   │       └── block/
-    │   │           └── redstone_dust/
-    │   │               ├── particle.png
-    │   │               ├── dot/ (easier organization)
-    │   │               │   ├── vanilla/
-    │   │               │   ├── 4_wide/
-    │   │               │   └── 6_wide/
-    │   │               ├── line0/
-    │   │               │   ├── vanilla/
-    │   │               │   ├── 4_wide/
-    │   │               │   └── 6_wide/
-    │   │               ├── line1/
-    │   │               │   ├── vanilla/
-    │   │               │   ├── 4_wide/
-    │   │               │   └── 6_wide/
-    │   │               └── numbers/
-    │   │                   ├── nonum/
-    │   │                   ├── num1/
-    │   │                   ├── num2/
-    │   │                   └── num3/
-    │   └── respackopts/ (needed for older rpo ver I think? might be redundant in 1.20+)
-    │       └── conf.json5
-    ├── pack.mcmeta
-    ├── pack.png
-    └── respackopts.json5
-```
-
-</details>
-
----
-
-**License:** [
-
-    This license applies to ONLY this repository and all files within, *not* the resource pack distributed on modrinth or curseforge.
-    
-    You (user, company, anyone or anything, any form of legal entity) is not allowed to do anything with this repository (ARR: All Rights Reserved) apart from the following exceptions (these are things you are **allowed** to do):
-    1. View and study the files as well as the file and commit history.
-    2. Download and use any folders or files for personal use only (distribution of files without my (Ketari) approval is prohibited).
-
-    To be extra clear, here are some (but not all) of the things you are **not** allowed to do:
-    1. Distribute, share, or upload the files or folders of this repo to anyone, anything or anywhere without my (Ketari) approval.
-    2. Use this repo for commercial use.
-    3. Use anything in this entire repo for any form of AI training.
-
-    Extra notes/rules/obligations:
-    1. Upon forking, cloning, copying, or any other similar act of obtaining this repository, you **must** include this licence, unchanged.
-    2. Upon creating a pull request or any other similar request to modify any files or parts of the repository, you give me full control over any files accepted/merged into any branch of this repo, including their license.
-    3. I (Ketari) retain the right to deny or allow any usage of this repo in any way, shape or form by anyone or anything for any reason.
-]
+stuff to keep track of:
+- rpo resource expansion (json replacements) are available from 1.17.1+
+- rpo presets are from 1.21.1+
+- see variant ideas - everything except shadows done (shadows probably later future update, they're complicated)
+- shaders 26.3 need default_colors.glsl to be in separate shaders/include/ folder - made it work with the rest of the shader files
+- dot +x and +z are both NOT +0.13 due to weird texture scaling issue (fixed in 1.21.11 but kept everywehre for simplicity for now) - not 100% sure what to do abt this, we'll see ig
+  - this issue is caused by FaceBakery shrinking every face's UVs slightly towards the centre of the face's UV area (lerp by 4 / atlas size) to stop atlas bleeding
+  - I am unsure on why this happens specifically with <16px textures/models and only on +x/+z
+- 1.21.9+ - pack.mcmeta wants pack/min format to be 15 instead of 4 (otherwise displays pack incompatible), which is exactly what I let it have. versions <1.20 now display "made for newer version of mc" but I'd rather have that lol
+- potentially have a "open pipes" option for float3d - potentially not rly viable rn?
+- off-floor default height is 0.02 - untested with isorender
+- textures done, models done: vanilla, flat, float3d, flat3d
+- rpo models folder separate from vanilla, vanilla only has van & num (num cannot be removed)
+- rpo for models choosing/swapping done (including float3d blockstate)
+- number types all take up a single 16x16 png, which gets swapped with rpo, and only 16 model files (1/ss)
+- height customization done but differently from previous version: dustHeight *and* numHeight are local to default height per model. also float3d goes up/down fully, instead of the sideways movement of "up" like the others have. numbers follow perfect height regardless of what model type is chosen, any height modifications, or if the "dot" is higher or not. float3d has an option to turn off the "up" state numbers
+- may want to make numbers for floating 3d "up" state be displayed on the side when possible? - complex/hard/long implementation
+- dust width/size customization done, potential idea to make numbers size customizeable as well but I dont think its worth it
+- 1.20.1 now properly works with color customization thanks to rpo *(make sure that the fallback can always be identified - otherwise the whole thing breaks)*
+- shaders get disabled by rpo when sodium is present to remove the warning message of sodium not supporting the pack
+- RR 2.0.0 is now fully finished
+- 
